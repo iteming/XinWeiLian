@@ -6,3 +6,4 @@ D:\GitWork\XinWeiLian\XWL\Common\bin\Debug\Newtonsoft.Json.dll
 D:\GitWork\XinWeiLian\XWL\Common\bin\Debug\System.Net.Http.Formatting.dll
 D:\GitWork\XinWeiLian\XWL\Common\obj\Debug\Common.dll
 D:\GitWork\XinWeiLian\XWL\Common\obj\Debug\Common.pdb
+D:\GitWork\XinWeiLian\XWL\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache

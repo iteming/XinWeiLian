@@ -12,6 +12,7 @@ namespace XWL.Web.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Title = Resources.Global.Home;
             var obj = new Repository<Admin>().Get().FirstOrDefault();
             return View();
         }

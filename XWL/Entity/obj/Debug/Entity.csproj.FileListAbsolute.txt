@@ -1,4 +1,3 @@
-D:\GitWork\XinWeiLian\XWL\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
 D:\GitWork\XinWeiLian\XWL\Entity\bin\Debug\Entity.dll.config
 D:\GitWork\XinWeiLian\XWL\Entity\bin\Debug\Entity.dll
 D:\GitWork\XinWeiLian\XWL\Entity\bin\Debug\Entity.pdb
@@ -12,5 +11,6 @@ D:\GitWork\XinWeiLian\XWL\Entity\bin\Debug\EntityFramework.xml
 D:\GitWork\XinWeiLian\XWL\Entity\bin\Debug\EntityFramework.SqlServer.xml
 D:\GitWork\XinWeiLian\XWL\Entity\bin\Debug\zh-Hans\EntityFramework.resources.dll
 D:\GitWork\XinWeiLian\XWL\Entity\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+D:\GitWork\XinWeiLian\XWL\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
 D:\GitWork\XinWeiLian\XWL\Entity\obj\Debug\Entity.dll
 D:\GitWork\XinWeiLian\XWL\Entity\obj\Debug\Entity.pdb
