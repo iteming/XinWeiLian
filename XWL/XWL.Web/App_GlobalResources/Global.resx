@@ -117,7 +117,312 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Home" xml:space="preserve">
-    <value>首页</value>
+  <data name="Develop_Icon" xml:space="preserve">
+    <value>/Public/images/fzgh_pic.png</value>
+  </data>
+  <data name="Develop_IconFoot" xml:space="preserve">
+    <value>/Public/images/fzgh_img.png</value>
+  </data>
+  <data name="Develop_sub_icon1" xml:space="preserve">
+    <value>/Public/images/num_1.png</value>
+  </data>
+  <data name="Develop_sub_icon2" xml:space="preserve">
+    <value>/Public/images/num_2.png</value>
+  </data>
+  <data name="Develop_sub_icon3" xml:space="preserve">
+    <value>/Public/images/num_3.png</value>
+  </data>
+  <data name="Develop_sub_icon4" xml:space="preserve">
+    <value>/Public/images/num_4.png</value>
+  </data>
+  <data name="Develop_sub_icon5" xml:space="preserve">
+    <value>/Public/images/num_5.png</value>
+  </data>
+  <data name="Develop_sub_title1" xml:space="preserve">
+    <value>2017 年1月 - 6 月 可行性调研</value>
+  </data>
+  <data name="Develop_sub_title2" xml:space="preserve">
+    <value>2017 年7月 - 12 月 区块链底层的搭建</value>
+  </data>
+  <data name="Develop_sub_title3" xml:space="preserve">
+    <value>2018 年1月 - 2 月 发行 NWToken</value>
+  </data>
+  <data name="Develop_sub_title4" xml:space="preserve">
+    <value>2018 年7月前 完成应用层商城搭建</value>
+  </data>
+  <data name="Develop_sub_title5" xml:space="preserve">
+    <value>2018 年 12月前 完成签约 1000 家商户上链的目标</value>
+  </data>
+  <data name="Develop_Title" xml:space="preserve">
+    <value>发展规划</value>
+  </data>
+  <data name="Home_btnRegister" xml:space="preserve">
+    <value>REGISTER OF TOKEN</value>
+  </data>
+  <data name="Home_btnWhitePaper" xml:space="preserve">
+    <value>WHITEPAPER</value>
+  </data>
+  <data name="Home_Detail" xml:space="preserve">
+    <value>NedToken是将权利从中心化的电商平台或者大广告商中释放出来的关键，基于NWT的流通机制，让市场自由回归中小商家和消费者，真正解决了垄断、隐私主权等问题，生态系统中活跃的各方参与者均能从中获得激励。</value>
+  </data>
+  <data name="Home_Title" xml:space="preserve">
+    <value>新维链·重构电商数据生态链</value>
+  </data>
+  <data name="Lang_Chinese" xml:space="preserve">
+    <value>中文</value>
+  </data>
+  <data name="Lang_English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Link_Facebook" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Link_Telegram" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Link_Twitter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Link_WeChat" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Link_Weibo" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Menu_Home" xml:space="preserve">
+    <value>主页</value>
+  </data>
+  <data name="Menu_Partner" xml:space="preserve">
+    <value>合作伙伴</value>
+  </data>
+  <data name="Menu_Project" xml:space="preserve">
+    <value>项目介绍</value>
+  </data>
+  <data name="Menu_Team" xml:space="preserve">
+    <value>团队</value>
+  </data>
+  <data name="Partner_sub_icon1" xml:space="preserve">
+    <value>/Public/images/hzlogo_01.png</value>
+  </data>
+  <data name="Partner_sub_icon2" xml:space="preserve">
+    <value>/Public/images/hzlogo_02.png</value>
+  </data>
+  <data name="Partner_sub_icon3" xml:space="preserve">
+    <value>/Public/images/hzlogo_03.png</value>
+  </data>
+  <data name="Partner_sub_icon4" xml:space="preserve">
+    <value>/Public/images/hzlogo_04.png</value>
+  </data>
+  <data name="Partner_sub_icon5" xml:space="preserve">
+    <value>/Public/images/hzlogo_05.png</value>
+  </data>
+  <data name="Partner_sub_icon6" xml:space="preserve">
+    <value>/Public/images/hzlogo_06.png</value>
+  </data>
+  <data name="Partner_Title" xml:space="preserve">
+    <value>合作伙伴</value>
+  </data>
+  <data name="Project_Detail" xml:space="preserve">
+    <value>&lt;p style="margin-top: 5px; text-indent: 2em;"&gt;
+    NedToken是全球首家基于区块链技术的电商供应链数 据生态。以先进的数据加密、区块链智能合约技术帮助商 家、消费者获得消费数据的所有权，控制权和收益权，实现 商家，消费者和品牌商的共臝合作。
+&lt;/p&gt;
+&lt;p style="text-indent: 2em;"&gt;
+    NedToken就是要重构电商供应链数据生态。&amp;nbsp;
+&lt;/p&gt;
+&lt;p style="text-indent: 2em;"&gt;
+    NedToken(新维链）的使命，简单的说，就是让数据自 由、安全、便捷的流通，消灭库存，让数字营销变得简单。
+&lt;/p&gt;
+&lt;p style="text-indent: 2em;"&gt;
+    NedToken将通过分布式、去中心化的区块链底层平 台，让数据的所有权归属用户（商家和消费者），并在用户 充分授权的情况下，通过自由、安全、便捷的流通，产生回 报和收益。
+&lt;/p&gt;</value>
+  </data>
+  <data name="Project_sub_detail1" xml:space="preserve">
+    <value>唯一不可篡改的表征价值</value>
+  </data>
+  <data name="Project_sub_detail2" xml:space="preserve">
+    <value>跨平台、跨系统价值流通</value>
+  </data>
+  <data name="Project_sub_detail3" xml:space="preserve">
+    <value>产品价值化，产品服务化</value>
+  </data>
+  <data name="Project_sub_icon1" xml:space="preserve">
+    <value>/Public/images/jzbz_icon.png</value>
+  </data>
+  <data name="Project_sub_icon2" xml:space="preserve">
+    <value>/Public/images/jzfw_icon.png</value>
+  </data>
+  <data name="Project_sub_icon3" xml:space="preserve">
+    <value>/Public/images/jzlt_icon.png</value>
+  </data>
+  <data name="Project_sub_title1" xml:space="preserve">
+    <value>价值表征</value>
+  </data>
+  <data name="Project_sub_title2" xml:space="preserve">
+    <value>价值流通</value>
+  </data>
+  <data name="Project_sub_title3" xml:space="preserve">
+    <value>价值服务</value>
+  </data>
+  <data name="Project_Title" xml:space="preserve">
+    <value>NedToken项目介绍</value>
+  </data>
+  <data name="TeamCore_sub_icon1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TeamCore_sub_icon2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TeamCore_sub_icon3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TeamCore_sub_icon4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TeamCore_sub_icon5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TeamCore_sub_icon6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TeamCore_sub_icon7" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TeamCore_sub_name1" xml:space="preserve">
+    <value>Todd Chaffee IVP基金合伙人 Coinbase投资人</value>
+  </data>
+  <data name="TeamCore_sub_name2" xml:space="preserve">
+    <value>Paul Veradittakit Pantera Capital合伙人</value>
+  </data>
+  <data name="TeamCore_sub_name3" xml:space="preserve">
+    <value>武源文 井通科技执行董事 兼CEO</value>
+  </data>
+  <data name="TeamCore_sub_name4" xml:space="preserve">
+    <value>陈小虎 井通科技首席科学家 MOAC项目技术负责人</value>
+  </data>
+  <data name="TeamCore_sub_name5" xml:space="preserve">
+    <value>Timo Hanke DIFNITY基金会工程总监</value>
+  </data>
+  <data name="TeamCore_sub_name6" xml:space="preserve">
+    <value>Nader Al-Naji Basecoin Founder/CEO</value>
+  </data>
+  <data name="TeamCore_sub_name7" xml:space="preserve">
+    <value>Linda Xie Scalar Capital联合创始人</value>
+  </data>
+  <data name="TeamCore_Title" xml:space="preserve">
+    <value>投资人及核心顾问</value>
+  </data>
+  <data name="Team_sub_detail1" xml:space="preserve">
+    <value>NEDT 项目负责人、基金会秘书长；毕业于新加坡南洋理工大学计算机专业，15年世界500强IT高管经验，区块链信徒。曾任惠普亚太区CTO/COO。</value>
+  </data>
+  <data name="Team_sub_detail2" xml:space="preserve">
+    <value>前互联网金融公司资易通CTO，前小米投资生态链创业公司小寻科技云服务部技术总监（2017中国最具投资价值公司Top 50)，前中兴通信云计算、大数据架构师、幵发经理。拥有近20年产品、研发、运维经验，在小寻公司期间负责物联网及数据处理平台开发及运维工作，期间研究区块链在物联网上的应用。</value>
+  </data>
+  <data name="Team_sub_detail3" xml:space="preserve">
+    <value>精通Angular、React、NodeJs等多种前端开发语言及可视化工具，在网络安全，P2P文件分发网络、网络爬虫等方向具有丰富经验。区块链热爱者，精通区块链原理及智能合约技术，致力于打造国内顶尖区块链项目。</value>
+  </data>
+  <data name="Team_sub_detail4" xml:space="preserve">
+    <value>数字货币早期投资人、巴比特专栏金牌作家，多家投资机构战略合作顾问，其对数字货币一级市场有着深刻的认知，是区块链骨灰级研究者，除持仓主流货币外，是Ardor, IOTA, IPFS, EOS, MANA等项目的早期参与者，均获得了巨大收益，目前指导多家区块链团队的项目运营。</value>
+  </data>
+  <data name="Team_sub_detail5" xml:space="preserve">
+    <value>资深视觉设计师，曾主导过多项互联网金融产品设计及金融品牌设计。具有丰富的互联网产品设计与品牌设计经验，倡导遵从用户诉求，满足用户体验需求的设计理念，致力于提升互联网金融数据产品的设计体验。</value>
+  </data>
+  <data name="Team_sub_detail6" xml:space="preserve">
+    <value>毕业于北京大学经济学硕士，曾任保洁（中国）高级市场总监，泛华集团信息战略系统负责人，擅长品牌打造和粉丝社群营销。数字货币早期研究者，曾负责热门项目分析、运营工作，对金融产品生态和投资哲学有深刻的见解。</value>
+  </data>
+  <data name="Team_sub_detail7" xml:space="preserve">
+    <value>首席法律顾问，美国华尔街知名律师。主要服务过：滚石唱片、米高梅、迪士尼、Wework等。</value>
+  </data>
+  <data name="Team_sub_detail8" xml:space="preserve">
+    <value>美国密歇根大学密码学博士，精通网络协议、加密算法、DDos攻击防护。对区块链中的信任关系，交易一致性，交易有无欺诈，信息是否被篡改，数据存储的可靠性以及隐私保护，有深虔研究。在国际信息安全与密码学的会议和杂志上发表论文近30篇， 拥有多项信息安全方向专利。</value>
+  </data>
+  <data name="Team_sub_icon1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Team_sub_icon2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Team_sub_icon3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Team_sub_icon4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Team_sub_icon5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Team_sub_icon6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Team_sub_icon7" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Team_sub_icon8" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Team_sub_name1" xml:space="preserve">
+    <value>SKY YU 首席执行官</value>
+  </data>
+  <data name="Team_sub_name2" xml:space="preserve">
+    <value>粟泰云 首席技术官</value>
+  </data>
+  <data name="Team_sub_name3" xml:space="preserve">
+    <value>杨波 项目技术总监</value>
+  </data>
+  <data name="Team_sub_name4" xml:space="preserve">
+    <value>程君 首席分祈师</value>
+  </data>
+  <data name="Team_sub_name5" xml:space="preserve">
+    <value>Bruce Yu 设计总监</value>
+  </data>
+  <data name="Team_sub_name6" xml:space="preserve">
+    <value>Tim Guan 市场总监</value>
+  </data>
+  <data name="Team_sub_name7" xml:space="preserve">
+    <value>Scott Beber 首席法律顾问</value>
+  </data>
+  <data name="Team_sub_name8" xml:space="preserve">
+    <value>Alfred Chen密码学专家</value>
+  </data>
+  <data name="Team_Title" xml:space="preserve">
+    <value>项目核心团队</value>
+  </data>
+  <data name="Web_Logo" xml:space="preserve">
+    <value>/Public/images/logo_icon.png</value>
+  </data>
+  <data name="Web_Name" xml:space="preserve">
+    <value>新维链</value>
+  </data>
+  <data name="Register_btnConfirm" xml:space="preserve">
+    <value>CONFIRM</value>
+  </data>
+  <data name="Register_Description" xml:space="preserve">
+    <value>Thank you for the interest! Prior to participating in this LAB token sale, please ensure that you have read, understand and hereby accept the &lt;a class='Website'&gt;Website Terms and Conditions&lt;/a&gt; and &lt;a class='Privacy'&gt;Privacy Policy&lt;/a&gt; documents. Please fill in the form below to express your interest in our LAB token sale.</value>
+  </data>
+  <data name="Register_Email" xml:space="preserve">
+    <value>电子邮箱* (EMAIL ADD)</value>
+  </data>
+  <data name="Register_EmailConfirm" xml:space="preserve">
+    <value>请确认邮箱* (EMAIL ADD CONFIRM)</value>
+  </data>
+  <data name="Register_Info1" xml:space="preserve">
+    <value>我已经阅读、理解并接受网站的相关协议、条件以及隐私声明等相关文件。</value>
+  </data>
+  <data name="Register_Info2" xml:space="preserve">
+    <value>我在此确认，我不是中华人民共和国公民、新加坡公民、不是美国领土或辖地、美国的任何州和/或哥伦比亚特E的公民，也不是根据和/或中国、新加坡、美国的法律成立 和/或管辖的公司、合伙或其他法律实体（包括但不限于分支机构或办公室或代表处），并不被禁止参与购买或持有Token。</value>
+  </data>
+  <data name="Register_Info3" xml:space="preserve">
+    <value>我在此确认，我有足够的法定年龄（至少18岁，或已经符合我所在的国藉国法律规定的完全民事行为能力人），我有独立的意思表示能力作出判断也有足够的能力购买Token。</value>
+  </data>
+  <data name="Register_Name" xml:space="preserve">
+    <value>姓名* (NAME)</value>
+  </data>
+  <data name="Register_Phone" xml:space="preserve">
+    <value>电话* (TELEPHONE)</value>
+  </data>
+  <data name="Register_Title" xml:space="preserve">
+    <value>代币注册 / REGISTER FOR TOKEN</value>
+  </data>
+  <data name="Register_WalletAddress" xml:space="preserve">
+    <value>以太币钱包地址（ ETH WALLET ADDRESS)</value>
   </data>
 </root>

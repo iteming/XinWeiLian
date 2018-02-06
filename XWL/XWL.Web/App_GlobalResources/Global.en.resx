@@ -117,7 +117,335 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Home" xml:space="preserve">
+  <data name="Develop_Icon" xml:space="preserve">
+    <value>/Public/images/fzgh_pic.png</value>
+  </data>
+  <data name="Develop_IconFoot" xml:space="preserve">
+    <value>/Public/images/fzgh_img.png</value>
+  </data>
+  <data name="Develop_sub_icon1" xml:space="preserve">
+    <value>/Public/images/num_1.png</value>
+  </data>
+  <data name="Develop_sub_icon2" xml:space="preserve">
+    <value>/Public/images/num_2.png</value>
+  </data>
+  <data name="Develop_sub_icon3" xml:space="preserve">
+    <value>/Public/images/num_3.png</value>
+  </data>
+  <data name="Develop_sub_icon4" xml:space="preserve">
+    <value>/Public/images/num_4.png</value>
+  </data>
+  <data name="Develop_sub_icon5" xml:space="preserve">
+    <value>/Public/images/num_5.png</value>
+  </data>
+  <data name="Develop_sub_title1" xml:space="preserve">
+    <value>January to June 2017 feasibility study</value>
+  </data>
+  <data name="Develop_sub_title2" xml:space="preserve">
+    <value>July 2017 — the construction of block chain at the bottom of December</value>
+  </data>
+  <data name="Develop_sub_title3" xml:space="preserve">
+    <value>The NEDToken will be issued in January, 2018</value>
+  </data>
+  <data name="Develop_sub_title4" xml:space="preserve">
+    <value>By July 2018, the application layer mall will be completed</value>
+  </data>
+  <data name="Develop_sub_title5" xml:space="preserve">
+    <value>By December 2018, the target of signing up to 1, 000 merchants will be completed.</value>
+  </data>
+  <data name="Develop_Title" xml:space="preserve">
+    <value>Planning of Development</value>
+  </data>
+  <data name="Home_btnRegister" xml:space="preserve">
+    <value>REGISTER OF TOKEN</value>
+  </data>
+  <data name="Home_btnWhitePaper" xml:space="preserve">
+    <value>WHITEPAPER</value>
+  </data>
+  <data name="Home_Detail" xml:space="preserve">
+    <value>Reconstructing the Data Chain for E-commerce</value>
+  </data>
+  <data name="Home_Title" xml:space="preserve">
+    <value>NEDT</value>
+  </data>
+  <data name="Lang_Chinese" xml:space="preserve">
+    <value>中文</value>
+  </data>
+  <data name="Lang_English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Link_Facebook" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Link_Telegram" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Link_Twitter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Link_WeChat" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Link_Weibo" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Menu_Home" xml:space="preserve">
     <value>Home</value>
+  </data>
+  <data name="Menu_Partner" xml:space="preserve">
+    <value>Partners</value>
+  </data>
+  <data name="Menu_Project" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="Menu_Team" xml:space="preserve">
+    <value>Team</value>
+  </data>
+  <data name="Partner_sub_icon1" xml:space="preserve">
+    <value>/Public/images/hzlogo_01.png</value>
+  </data>
+  <data name="Partner_sub_icon2" xml:space="preserve">
+    <value>/Public/images/hzlogo_02.png</value>
+  </data>
+  <data name="Partner_sub_icon3" xml:space="preserve">
+    <value>/Public/images/hzlogo_03.png</value>
+  </data>
+  <data name="Partner_sub_icon4" xml:space="preserve">
+    <value>/Public/images/hzlogo_04.png</value>
+  </data>
+  <data name="Partner_sub_icon5" xml:space="preserve">
+    <value>/Public/images/hzlogo_05.png</value>
+  </data>
+  <data name="Partner_sub_icon6" xml:space="preserve">
+    <value>/Public/images/hzlogo_06.png</value>
+  </data>
+  <data name="Partner_Title" xml:space="preserve">
+    <value>Partners</value>
+  </data>
+  <data name="Project_Detail" xml:space="preserve">
+    <value>&lt;p&gt;
+    NEDT is the worltf s first e-commerce supply chain data ecology based on block chain technology. With advanced data encryption, block chain intelligent contract technical help businesses and consumers to obtain the ownership of the consumption data, the implementation of control and profit businesses, consumers and brands and win-win cooperation.
+&lt;/p&gt;
+&lt;p&gt;
+    NEDT Reconstructing the data ecology of e-commerce supply chain.
+&lt;/p&gt;
+&lt;p&gt;
+    Simply put, it is to make the data free, safe, convenient, to eliminate inventory and make digital marketing easy.
+&lt;/p&gt;
+&lt;p&gt;
+    NEDT will through a distributed, decentralized chain blocks underlying platform, let the ownership of data users (businesses and consumers), and in the case of a fully authorized users, through free, safe, convenient circulation, generating returns and profits.
+&lt;/p&gt;</value>
+  </data>
+  <data name="Project_sub_detail1" xml:space="preserve">
+    <value>The only untamable representational value</value>
+  </data>
+  <data name="Project_sub_detail2" xml:space="preserve">
+    <value>Cross-platform, cross-system value circulation</value>
+  </data>
+  <data name="Project_sub_detail3" xml:space="preserve">
+    <value>Product value, product service</value>
+  </data>
+  <data name="Project_sub_icon1" xml:space="preserve">
+    <value>/Public/images/jzbz_icon.png</value>
+  </data>
+  <data name="Project_sub_icon2" xml:space="preserve">
+    <value>/Public/images/jzfw_icon.png</value>
+  </data>
+  <data name="Project_sub_icon3" xml:space="preserve">
+    <value>/Public/images/jzlt_icon.png</value>
+  </data>
+  <data name="Project_sub_title1" xml:space="preserve">
+    <value>Value representation</value>
+  </data>
+  <data name="Project_sub_title2" xml:space="preserve">
+    <value>Value of circulation</value>
+  </data>
+  <data name="Project_sub_title3" xml:space="preserve">
+    <value>Value of the services</value>
+  </data>
+  <data name="Project_Title" xml:space="preserve">
+    <value>INFO</value>
+  </data>
+  <data name="TeamCore_sub_icon1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TeamCore_sub_icon2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TeamCore_sub_icon3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TeamCore_sub_icon4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TeamCore_sub_icon5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TeamCore_sub_icon6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TeamCore_sub_icon7" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TeamCore_sub_name1" xml:space="preserve">
+    <value>Todd Chaffee 
+IVP fund partner. 
+Coinbase investors</value>
+  </data>
+  <data name="TeamCore_sub_name2" xml:space="preserve">
+    <value>Paul Veradittakit
+Pantera Capital 
+partners</value>
+  </data>
+  <data name="TeamCore_sub_name3" xml:space="preserve">
+    <value>Wu Yuanwen
+Jing tong technology executive director.
+And CEO</value>
+  </data>
+  <data name="TeamCore_sub_name4" xml:space="preserve">
+    <value>Xia〇-hu Chen
+Chief scientist of well technology.
+Technical director of MOAC project</value>
+  </data>
+  <data name="TeamCore_sub_name5" xml:space="preserve">
+    <value>Timo Hanke
+DIFINITY foundation engineering director</value>
+  </data>
+  <data name="TeamCore_sub_name6" xml:space="preserve">
+    <value>Nader Al-Naji Basecoin Founder/CEO</value>
+  </data>
+  <data name="TeamCore_sub_name7" xml:space="preserve">
+    <value>Linda Xie
+Scalar Capital cofounder</value>
+  </data>
+  <data name="TeamCore_Title" xml:space="preserve">
+    <value>Investors and Core Advisors</value>
+  </data>
+  <data name="Team_sub_detail1" xml:space="preserve">
+    <value>Secretary general of the foundation.
+Graduated from nanyang technological university in Singapore.
+Computer major, 15 years world top 500.
+IT executive experience, block chain believer.
+I have been in the Asia Pacific CT0/C00.</value>
+  </data>
+  <data name="Team_sub_detail2" xml:space="preserve">
+    <value>before the Internet financial information and hui to CTO.
+millet investment before filling small startups find cloud technical director of science and technology (2017 of China^ s most valuable company plunged), zte before cloud computing, big data architects and development manager. With nearly 20 years of experience in research and development and operation and maintenance, I was responsible for the things.</value>
+  </data>
+  <data name="Team_sub_detail3" xml:space="preserve">
+    <value>Proficient in various advanced development language and visualization tools such as the Angle, React and Nodejs,and have rich experience in network security, P2P file distribution network, veb crawler and so on. Block chain lovers, proficient in block chain principle and smart contract technology, committed to building the top domestic  block chain project.</value>
+  </data>
+  <data name="Team_sub_detail4" xml:space="preserve">
+    <value>Early digital currency investors, babbitt column gold writers, many investment institutions strategic cooperation consultant, for the digital currency has in- depth understanding of the primary market, block chain is hardcore researchers, a position outside the mainstream of stock, is the Ardor, LOTA, IPFS, EOS, early participants of the project</value>
+  </data>
+  <data name="Team_sub_detail5" xml:space="preserve">
+    <value>Senior visual designer, has led many Internet financial products design and financial brand design. Rich experience in Internet product design and brand design. To promote the design concept of following users^ demands and satisfying users^ experience demands^ and to improve the design experience of Internet financial data products</value>
+  </data>
+  <data name="Team_sub_detail6" xml:space="preserve">
+    <value>I graduated from Beijing university with a master^ s degree in economics. I was once the director of the high static market in baojie (China), and the information strategic system of pan hua group was a good company, and I was good at brand building and fan community marketing</value>
+  </data>
+  <data name="Team_sub_detail7" xml:space="preserve">
+    <value>Famous fall Street lawyer, mainly served: rolling stone, MGM, Disney, fework, etc</value>
+  </data>
+  <data name="Team_sub_detail8" xml:space="preserve">
+    <value>Doctor of cryptography in the United States, proficient in network protocol, encryption algorithm, DDos attack protection. The trust relationship in the block chain, the transaction consistency, whether the transaction is fraudulent, whether the information is tampered with, cryptography conference and magazine published nearly 30 papers, has a number of information security direction patents.</value>
+  </data>
+  <data name="Team_sub_icon1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Team_sub_icon2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Team_sub_icon3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Team_sub_icon4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Team_sub_icon5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Team_sub_icon6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Team_sub_icon7" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Team_sub_icon8" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Team_sub_name1" xml:space="preserve">
+    <value>Sky Yu
+NEDT project leader</value>
+  </data>
+  <data name="Team_sub_name2" xml:space="preserve">
+    <value>LiTaiYun
+Chief technology officer</value>
+  </data>
+  <data name="Team_sub_name3" xml:space="preserve">
+    <value>Yang Bo
+Project technical director</value>
+  </data>
+  <data name="Team_sub_name4" xml:space="preserve">
+    <value>Cheng Jun
+Chief analyst</value>
+  </data>
+  <data name="Team_sub_name5" xml:space="preserve">
+    <value>Bruce Yu
+Design director</value>
+  </data>
+  <data name="Team_sub_name6" xml:space="preserve">
+    <value>Tim Guan
+Marketing director</value>
+  </data>
+  <data name="Team_sub_name7" xml:space="preserve">
+    <value>Scott Beber
+Chief counsel</value>
+  </data>
+  <data name="Team_sub_name8" xml:space="preserve">
+    <value>Aifred Chen
+Cryptographer</value>
+  </data>
+  <data name="Team_Title" xml:space="preserve">
+    <value>Team</value>
+  </data>
+  <data name="Web_Logo" xml:space="preserve">
+    <value>/Public/images/logo_icon.png</value>
+  </data>
+  <data name="Web_Name" xml:space="preserve">
+    <value>NedToken</value>
+  </data>
+  <data name="Register_btnConfirm" xml:space="preserve">
+    <value>CONFIRM</value>
+  </data>
+  <data name="Register_Description" xml:space="preserve">
+    <value>Thank you for the interest! Prior to participating in this LAB token sale, please ensure that you have read, understand and hereby accept the &lt;a class='Website'&gt;Website Terms and Conditions&lt;/a&gt; and &lt;a class='Privacy'&gt;Privacy Policy&lt;/a&gt; documents. Please fill in the form below to express your interest in our LAB token sale.</value>
+  </data>
+  <data name="Register_Email" xml:space="preserve">
+    <value>电子邮箱* (EMAIL ADD)</value>
+  </data>
+  <data name="Register_EmailConfirm" xml:space="preserve">
+    <value>请确认邮箱* (EMAIL ADD CONFIRM)</value>
+  </data>
+  <data name="Register_Info1" xml:space="preserve">
+    <value>我已经阅读、理解并接受网站的相关协议、条件以及隐私声明等相关文件。</value>
+  </data>
+  <data name="Register_Info2" xml:space="preserve">
+    <value>我在此确认，我不是中华人民共和国公民、新加坡公民、不是美国领土或辖地、美国的任何州和/或哥伦比亚特E的公民，也不是根据和/或中国、新加坡、美国的法律成立 和/或管辖的公司、合伙或其他法律实体（包括但不限于分支机构或办公室或代表处），并不被禁止参与购买或持有Token。</value>
+  </data>
+  <data name="Register_Info3" xml:space="preserve">
+    <value>我在此确认，我有足够的法定年龄（至少18岁，或已经符合我所在的国藉国法律规定的完全民事行为能力人），我有独立的意思表示能力作出判断也有足够的能力购买Token。</value>
+  </data>
+  <data name="Register_Name" xml:space="preserve">
+    <value>姓名* (NAME)</value>
+  </data>
+  <data name="Register_Phone" xml:space="preserve">
+    <value>电话* (TELEPHONE)</value>
+  </data>
+  <data name="Register_Title" xml:space="preserve">
+    <value>代币注册 / REGISTER FOR TOKEN</value>
+  </data>
+  <data name="Register_WalletAddress" xml:space="preserve">
+    <value>以太币钱包地址（ ETH WALLET ADDRESS)</value>
   </data>
 </root>
