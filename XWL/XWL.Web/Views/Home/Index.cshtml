@@ -1,5 +1,505 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = @Resources.Global.Home_Title;
 }
+<style>
+    img {
+        max-width: 100%;
+    }
+</style>
+<!-- Section: home -->
+<section class="hero" id="home">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center inner">
+                <div class="animatedParent">
+                    <h1 class="animated fadeInDown">@Resources.Global.Home_Title</h1>
+                    <p class="animated fadeInUp">@Resources.Global.Home_Detail</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <a href="/Home/Register" class="learn-more-btn btn-scroll">@Resources.Global.Home_btnRegister</a>
+            </div>
+            <div class="col-md-6 text-center">
+                <a href="@Resources.Global.Home_WhitePaper_href" target="_blank" class="learn-more-btn btn-scroll">@Resources.Global.Home_btnWhitePaper</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Section: home -->
+<!-- Section: project -->
+<section id="project" class="home-section color-dark bg-white">
+    <div class="container marginbot-50">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="animatedParent">
+                    <div class="section-heading text-center animated bounceInDown">
+                        <h2 class="h-bold">@Resources.Global.Project_Title</h2>
+                        <div class="divider-header"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-@Resources.Global.Web_Name
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 animatedParent">
+                <div>
+                    @(new HtmlString(Resources.Global.Project_Detail))
+                    <p>
+                        <a href="#service" class="btn btn-skin btn-scroll">What we do</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 animatedParent">
+                <img src="@Resources.Global.Project_Icon" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="service" class="home-section color-dark bg-gray">
+    <div class="text-center">
+        <div class="container">
+            <div class="row animatedParent">
+                <div class="col-md-4">
+                    <div class="animated rotateInDownLeft">
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <img src="@Resources.Global.Project_sub_icon1" />
+                            </div>
+                            <div class="service-desc">
+                                <h5>@Resources.Global.Project_sub_title1</h5>
+                                <div class="divider-header"></div>
+                                <p>
+                                    @Resources.Global.Project_sub_detail1
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="animated rotateInDownLeft slow">
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <img src="@Resources.Global.Project_sub_icon2" />
+                            </div>
+                            <div class="service-desc">
+                                <h5>@Resources.Global.Project_sub_title2</h5>
+                                <div class="divider-header"></div>
+                                <p>
+                                    @Resources.Global.Project_sub_detail2
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="animated rotateInDownLeft slower">
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <img src="@Resources.Global.Project_sub_icon3" />
+                            </div>
+                            <div class="service-desc">
+                                <h5>@Resources.Global.Project_sub_title3</h5>
+                                <div class="divider-header"></div>
+                                <p>
+                                    @Resources.Global.Project_sub_detail3
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Section: project -->
+
+<!-- Section: develop -->
+<section id="develop" class="home-section color-dark bg-white">
+    <div class="container marginbot-50">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="animatedParent">
+                    <div class="section-heading text-center animated bounceInDown">
+                        <h2 class="h-bold">@Resources.Global.Develop_Title</h2>
+                        <div class="divider-header"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <div class="container">
+            <div class="row animatedParent">
+                <div class="col-md-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-badge info">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">@Resources.Global.Develop_sub_title1</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge warning">
+                                <i class="fa fa-book"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">@Resources.Global.Develop_sub_title2</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-badge danger">
+                                <i class="fa fa-fighter-jet"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">@Resources.Global.Develop_sub_title3</h4>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge active">
+                                <i class="fa fa-heart-o"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">@Resources.Global.Develop_sub_title4</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-badge success">
+                                <i class="fa fa-thumbs-o-up"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">@Resources.Global.Develop_sub_title5</h4>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12">
+                    <img src="@Resources.Global.Develop_IconFoot"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Section: develop -->
+
+<!-- Section: team -->
+<section id="team" class="home-section color-dark bg-gray">
+    <div class="container marginbot-50">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="animatedParent">
+                    <div class="section-heading text-center animated bounceInDown">
+                        <h2 class="h-bold">@Resources.Global.Team_Title</h2>
+                        <div class="divider-header"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="text-center">
+        <div class="container">
+            <div class="row animatedParent">
+                <div class="col-md-3 animated fadeInUp">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="@Resources.Global.Team_sub_icon1" class="img-circle" />
+                        </div>
+                        <div class="service-desc">
+                            <h5>@Resources.Global.Team_sub_name1</h5>
+                            <div class="divider-header"></div>
+                            <p>
+                                @Resources.Global.Team_sub_detail1
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 animated fadeInUp slow">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="@Resources.Global.Team_sub_icon2" class="img-circle" />
+                        </div>
+                        <div class="service-desc">
+                            <h5>@Resources.Global.Team_sub_name2</h5>
+                            <div class="divider-header"></div>
+                            <p>
+                                @Resources.Global.Team_sub_detail2
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 animated fadeInUp slower">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="@Resources.Global.Team_sub_icon3" class="img-circle" />
+                        </div>
+                        <div class="service-desc">
+                            <h5>@Resources.Global.Team_sub_name3</h5>
+                            <div class="divider-header"></div>
+                            <p>
+                                @Resources.Global.Team_sub_detail3
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 animated fadeInUp slowest">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="@Resources.Global.Team_sub_icon4" class="img-circle" />
+                        </div>
+                        <div class="service-desc">
+                            <h5>@Resources.Global.Team_sub_name4</h5>
+                            <div class="divider-header"></div>
+                            <p>
+                                @Resources.Global.Team_sub_detail4
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row animatedParent">
+                <div class="col-md-3 animated fadeInUp">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="@Resources.Global.Team_sub_icon5" class="img-circle" />
+                        </div>
+                        <div class="service-desc">
+                            <h5>@Resources.Global.Team_sub_name5</h5>
+                            <div class="divider-header"></div>
+                            <p>
+                                @Resources.Global.Team_sub_detail5
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 animated fadeInUp slow">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="@Resources.Global.Team_sub_icon6" class="img-circle" />
+                        </div>
+                        <div class="service-desc">
+                            <h5>@Resources.Global.Team_sub_name6</h5>
+                            <div class="divider-header"></div>
+                            <p>
+                                @Resources.Global.Team_sub_detail6
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 animated fadeInUp slower">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="@Resources.Global.Team_sub_icon7" class="img-circle" />
+                        </div>
+                        <div class="service-desc">
+                            <h5>@Resources.Global.Team_sub_name7</h5>
+                            <div class="divider-header"></div>
+                            <p>
+                                @Resources.Global.Team_sub_detail7
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 animated fadeInUp slowest">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="@Resources.Global.Team_sub_icon8" class="img-circle" />
+                        </div>
+                        <div class="service-desc">
+                            <h5>@Resources.Global.Team_sub_name8</h5>
+                            <div class="divider-header"></div>
+                            <p>
+                                @Resources.Global.Team_sub_detail8
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="teamcore" class="home-section color-dark bg-gray">
+    <div class="container marginbot-50">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="animatedParent">
+                    <div class="section-heading text-center animated bounceInDown">
+                        <h2 class="h-bold">@Resources.Global.TeamCore_Title</h2>
+                        <div class="divider-header"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <div class="container">
+            <div class="row animatedParent">
+                <div class="col-md-3 animated fadeInUp">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="@Resources.Global.TeamCore_sub_icon1" class="img-circle" />
+                        </div>
+                        <div class="service-desc">
+                            <h5>@Resources.Global.TeamCore_sub_name1</h5>
+                            <div class="divider-header"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 animated fadeInUp slow">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="@Resources.Global.TeamCore_sub_icon2" class="img-circle" />
+                        </div>
+                        <div class="service-desc">
+                            <h5>@Resources.Global.TeamCore_sub_name2</h5>
+                            <div class="divider-header"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 animated fadeInUp slower">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="@Resources.Global.TeamCore_sub_icon3" class="img-circle" />
+                        </div>
+                        <div class="service-desc">
+                            <h5>@Resources.Global.TeamCore_sub_name3</h5>
+                            <div class="divider-header"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 animated fadeInUp slowest">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="@Resources.Global.TeamCore_sub_icon4" class="img-circle" />
+                        </div>
+                        <div class="service-desc">
+                            <h5>@Resources.Global.TeamCore_sub_name4</h5>
+                            <div class="divider-header"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row animatedParent">
+                <div class="col-md-3 animated fadeInUp">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="@Resources.Global.TeamCore_sub_icon5" class="img-circle" />
+                        </div>
+                        <div class="service-desc">
+                            <h5>@Resources.Global.TeamCore_sub_name5</h5>
+                            <div class="divider-header"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 animated fadeInUp slow">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="@Resources.Global.TeamCore_sub_icon6" class="img-circle" />
+                        </div>
+                        <div class="service-desc">
+                            <h5>@Resources.Global.TeamCore_sub_name6</h5>
+                            <div class="divider-header"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 animated fadeInUp slower">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="@Resources.Global.TeamCore_sub_icon7" class="img-circle" />
+                        </div>
+                        <div class="service-desc">
+                            <h5>@Resources.Global.TeamCore_sub_name7</h5>
+                            <div class="divider-header"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Section: team -->
+<!-- Section: partner -->
+<section id="partner" class="home-section color-dark bg-white">
+    <div class="container marginbot-50">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="animatedParent">
+                    <div class="section-heading text-center animated bounceInDown">
+                        <h2 class="h-bold">@Resources.Global.Partner_Title</h2>
+                        <div class="divider-header"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <div class="container">
+            <div class="row animatedParent">
+                <div class="col-md-4 animated fadeInUp">
+                    <div class="service-box">
+                        <img src="@Resources.Global.Partner_sub_icon1" />
+                    </div>
+                </div>
+                <div class="col-md-4 animated fadeInUp slow">
+                    <div class="service-box">
+                        <img src="@Resources.Global.Partner_sub_icon2" />
+                    </div>
+                </div>
+                <div class="col-md-4 animated fadeInUp slower">
+                    <div class="service-box">
+                        <img src="@Resources.Global.Partner_sub_icon3" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row animatedParent">
+                <div class="col-md-4 animated fadeInUp">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="@Resources.Global.Partner_sub_icon4" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animated fadeInUp slow">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="@Resources.Global.Partner_sub_icon5" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animated fadeInUp slower">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="@Resources.Global.Partner_sub_icon6" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Section: partner -->

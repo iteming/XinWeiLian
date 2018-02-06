@@ -1107,6 +1107,25 @@
     <Content Include="Demo\demo3\landing.html" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Public\color\default.css" />
+    <Content Include="Public\css\animations.css" />
+    <Content Include="Public\css\bootstrap.css" />
+    <Content Include="Public\css\bootstrap.min.css" />
+    <Content Include="Public\css\nivo-lightbox-theme\default\close%402x.png" />
+    <Content Include="Public\css\nivo-lightbox-theme\default\close.png" />
+    <Content Include="Public\css\nivo-lightbox-theme\default\default.css" />
+    <Content Include="Public\css\nivo-lightbox-theme\default\loading%402x.gif" />
+    <Content Include="Public\css\nivo-lightbox-theme\default\loading.gif" />
+    <Content Include="Public\css\nivo-lightbox-theme\default\next%402x.png" />
+    <Content Include="Public\css\nivo-lightbox-theme\default\next.png" />
+    <Content Include="Public\css\nivo-lightbox-theme\default\prev%402x.png" />
+    <Content Include="Public\css\nivo-lightbox-theme\default\prev.png" />
+    <Content Include="Public\css\nivo-lightbox.css" />
+    <Content Include="Public\css\style.css" />
+    <Content Include="Public\css\timeline.css" />
+    <Content Include="Public\font-awesome\css\font-awesome.css" />
+    <Content Include="Public\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Public\font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="Public\images\fzgh_img.png" />
     <Content Include="Public\images\fzgh_pic.png" />
     <Content Include="Public\images\hzlogo_01.png" />
@@ -1127,7 +1146,27 @@
     <Content Include="Public\images\num_3.png" />
     <Content Include="Public\images\num_4.png" />
     <Content Include="Public\images\num_5.png" />
+    <Content Include="Public\img\bullet.png" />
+    <Content Include="Public\img\cbp-sprite.png" />
+    <Content Include="Public\img\hero-bg.jpg" />
+    <Content Include="Public\img\works\1.jpg" />
+    <Content Include="Public\img\works\2.jpg" />
+    <Content Include="Public\img\works\3.jpg" />
+    <Content Include="Public\img\works\4.jpg" />
+    <Content Include="Public\img\works\5.jpg" />
+    <Content Include="Public\img\works\6.jpg" />
+    <Content Include="Public\img\works\7.jpg" />
+    <Content Include="Public\img\works\8.jpg" />
+    <Content Include="Public\js\bootstrap.min.js" />
+    <Content Include="Public\js\css3-animate-it.js" />
+    <Content Include="Public\js\custom.js" />
+    <Content Include="Public\js\jquery.appear.js" />
+    <Content Include="Public\js\jquery.easing.min.js" />
     <Content Include="Public\js\jquery.min.js" />
+    <Content Include="Public\js\jquery.scrollTo.js" />
+    <Content Include="Public\js\jquery.sticky.js" />
+    <Content Include="Public\js\nivo-lightbox.min.js" />
+    <Content Include="Public\js\stellar.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -1169,6 +1208,7 @@
     <Content Include="App_GlobalResources\Global.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>Global.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
@@ -1251,6 +1291,102 @@
     <Content Include="Demo\demo3\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Demo\demo3\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Demo\demo3\fonts\glyphicons-halflings-regular.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\doc\NEDT-privacy-policy.pdf" />
+    <Content Include="Public\doc\NEDT-website-terms-and-conditions.pdf" />
+    <Content Include="Public\doc\NEDT-WHITEPAPER_EN.pdf" />
+    <Content Include="Public\doc\NEDT-WHITEPAPER_ZH.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\fonts\fontawesome-webfont.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\fonts\fontawesome-webfont.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\fonts\fontawesome-webfont.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\fonts\FontAwesome.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\less\bordered-pulled.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\less\core.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\less\fixed-width.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\less\font-awesome.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\less\icons.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\less\larger.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\less\list.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\less\mixins.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\less\path.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\less\rotated-flipped.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\less\spinning.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\less\stacked.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\less\variables.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\scss\_bordered-pulled.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\scss\_core.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\scss\_fixed-width.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\scss\_icons.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\scss\_larger.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\scss\_list.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\scss\_mixins.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\scss\_path.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\scss\_rotated-flipped.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\scss\_spinning.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\scss\_stacked.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\scss\_variables.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\font-awesome\scss\font-awesome.scss" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

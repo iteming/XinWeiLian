@@ -214,6 +214,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///  查找类似 /Public/doc/NEDT-WHITEPAPER_ZH.pdf 的本地化字符串。
+        /// </summary>
+        internal static string Home_WhitePaper_href {
+            get {
+                return ResourceManager.GetString("Home_WhitePaper_href", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///  查找类似 中文 的本地化字符串。
         /// </summary>
         internal static string Lang_Chinese {
@@ -273,6 +282,15 @@ namespace Resources {
         internal static string Link_Weibo {
             get {
                 return ResourceManager.GetString("Link_Weibo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///  查找类似 发展规划 的本地化字符串。
+        /// </summary>
+        internal static string Menu_Develop {
+            get {
+                return ResourceManager.GetString("Menu_Develop", resourceCulture);
             }
         }
         
@@ -392,6 +410,15 @@ namespace Resources {
         internal static string Project_Detail {
             get {
                 return ResourceManager.GetString("Project_Detail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///  查找类似 /Public/images/newtoken_img.png 的本地化字符串。
+        /// </summary>
+        internal static string Project_Icon {
+            get {
+                return ResourceManager.GetString("Project_Icon", resourceCulture);
             }
         }
         
@@ -567,6 +594,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///  查找类似 /Public/doc/NEDT-privacy-policy.pdf 的本地化字符串。
+        /// </summary>
+        internal static string Register_Privacy_href {
+            get {
+                return ResourceManager.GetString("Register_Privacy_href", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///  查找类似 代币注册 / REGISTER FOR TOKEN 的本地化字符串。
         /// </summary>
         internal static string Register_Title {
@@ -581,6 +617,15 @@ namespace Resources {
         internal static string Register_WalletAddress {
             get {
                 return ResourceManager.GetString("Register_WalletAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///  查找类似 /Public/doc/NEDT-website-terms-and-conditions.pdf 的本地化字符串。
+        /// </summary>
+        internal static string Register_Website_href {
+            get {
+                return ResourceManager.GetString("Register_Website_href", resourceCulture);
             }
         }
         

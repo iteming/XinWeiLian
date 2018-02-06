@@ -425,4 +425,19 @@
   <data name="Register_WalletAddress" xml:space="preserve">
     <value>以太币钱包地址（ ETH WALLET ADDRESS)</value>
   </data>
+  <data name="Home_WhitePaper_href" xml:space="preserve">
+    <value>/Public/doc/NEDT-WHITEPAPER_ZH.pdf</value>
+  </data>
+  <data name="Register_Privacy_href" xml:space="preserve">
+    <value>/Public/doc/NEDT-privacy-policy.pdf</value>
+  </data>
+  <data name="Register_Website_href" xml:space="preserve">
+    <value>/Public/doc/NEDT-website-terms-and-conditions.pdf</value>
+  </data>
+  <data name="Project_Icon" xml:space="preserve">
+    <value>/Public/images/newtoken_img.png</value>
+  </data>
+  <data name="Menu_Develop" xml:space="preserve">
+    <value>发展规划</value>
+  </data>
 </root>
