@@ -266,27 +266,6 @@
   <data name="Project_Title" xml:space="preserve">
     <value>NedToken项目介绍</value>
   </data>
-  <data name="TeamCore_sub_icon1" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TeamCore_sub_icon2" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TeamCore_sub_icon3" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TeamCore_sub_icon4" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TeamCore_sub_icon5" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TeamCore_sub_icon6" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TeamCore_sub_icon7" xml:space="preserve">
-    <value />
-  </data>
   <data name="TeamCore_sub_name1" xml:space="preserve">
     <value>Todd Chaffee IVP基金合伙人 Coinbase投资人</value>
   </data>
@@ -334,30 +313,6 @@
   </data>
   <data name="Team_sub_detail8" xml:space="preserve">
     <value>美国密歇根大学密码学博士，精通网络协议、加密算法、DDos攻击防护。对区块链中的信任关系，交易一致性，交易有无欺诈，信息是否被篡改，数据存储的可靠性以及隐私保护，有深虔研究。在国际信息安全与密码学的会议和杂志上发表论文近30篇， 拥有多项信息安全方向专利。</value>
-  </data>
-  <data name="Team_sub_icon1" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Team_sub_icon2" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Team_sub_icon3" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Team_sub_icon4" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Team_sub_icon5" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Team_sub_icon6" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Team_sub_icon7" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Team_sub_icon8" xml:space="preserve">
-    <value />
   </data>
   <data name="Team_sub_name1" xml:space="preserve">
     <value>SKY YU 首席执行官</value>
@@ -439,5 +394,53 @@
   </data>
   <data name="Menu_Develop" xml:space="preserve">
     <value>发展规划</value>
+  </data>
+  <data name="TeamCore_sub_icon1" xml:space="preserve">
+    <value>/Public/images/TeamCore1.png</value>
+  </data>
+  <data name="TeamCore_sub_icon2" xml:space="preserve">
+    <value>/Public/images/TeamCore2.png</value>
+  </data>
+  <data name="TeamCore_sub_icon3" xml:space="preserve">
+    <value>/Public/images/TeamCore3.png</value>
+  </data>
+  <data name="TeamCore_sub_icon4" xml:space="preserve">
+    <value>/Public/images/TeamCore4.png</value>
+  </data>
+  <data name="TeamCore_sub_icon5" xml:space="preserve">
+    <value>/Public/images/TeamCore5.png</value>
+  </data>
+  <data name="TeamCore_sub_icon6" xml:space="preserve">
+    <value>/Public/images/TeamCore6.png</value>
+  </data>
+  <data name="TeamCore_sub_icon7" xml:space="preserve">
+    <value>/Public/images/TeamCore7.png</value>
+  </data>
+  <data name="Team_sub_icon1" xml:space="preserve">
+    <value>/Public/images/Team1.png</value>
+  </data>
+  <data name="Team_sub_icon2" xml:space="preserve">
+    <value>/Public/images/Team2.png</value>
+  </data>
+  <data name="Team_sub_icon3" xml:space="preserve">
+    <value>/Public/images/Team3.png</value>
+  </data>
+  <data name="Team_sub_icon4" xml:space="preserve">
+    <value>/Public/images/Team4.png</value>
+  </data>
+  <data name="Team_sub_icon5" xml:space="preserve">
+    <value>/Public/images/Team5.png</value>
+  </data>
+  <data name="Team_sub_icon6" xml:space="preserve">
+    <value>/Public/images/Team6.png</value>
+  </data>
+  <data name="Team_sub_icon7" xml:space="preserve">
+    <value>/Public/images/Team7.png</value>
+  </data>
+  <data name="Team_sub_icon8" xml:space="preserve">
+    <value>/Public/images/Team8.png</value>
+  </data>
+  <data name="Home_btnRegister_href" xml:space="preserve">
+    <value>/zh/Home/Register</value>
   </data>
 </root>

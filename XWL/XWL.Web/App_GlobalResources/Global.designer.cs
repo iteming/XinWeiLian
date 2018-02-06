@@ -19,7 +19,7 @@ namespace Resources {
     // 类通过类似于 ResGen 或 Visual Studio 的工具自动生成的。
     // 若要添加或删除成员，请编辑 .ResX 文件，然后重新运行 ResGen
     // (以 /str 作为命令选项)，或重新生成 Visual Studio 项目。
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Web.Application.StronglyTypedResourceProxyBuilder", "14.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Web.Application.StronglyTypedResourceProxyBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Global {
@@ -183,6 +183,15 @@ namespace Resources {
         internal static string Home_btnRegister {
             get {
                 return ResourceManager.GetString("Home_btnRegister", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///  查找类似 /zh/Home/Register 的本地化字符串。
+        /// </summary>
+        internal static string Home_btnRegister_href {
+            get {
+                return ResourceManager.GetString("Home_btnRegister_href", resourceCulture);
             }
         }
         
@@ -630,7 +639,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///  查找类似  的本地化字符串。
+        ///  查找类似 /Public/images/TeamCore1.png 的本地化字符串。
         /// </summary>
         internal static string TeamCore_sub_icon1 {
             get {
@@ -639,7 +648,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///  查找类似  的本地化字符串。
+        ///  查找类似 /Public/images/TeamCore2.png 的本地化字符串。
         /// </summary>
         internal static string TeamCore_sub_icon2 {
             get {
@@ -648,7 +657,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///  查找类似  的本地化字符串。
+        ///  查找类似 /Public/images/TeamCore3.png 的本地化字符串。
         /// </summary>
         internal static string TeamCore_sub_icon3 {
             get {
@@ -657,7 +666,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///  查找类似  的本地化字符串。
+        ///  查找类似 /Public/images/TeamCore4.png 的本地化字符串。
         /// </summary>
         internal static string TeamCore_sub_icon4 {
             get {
@@ -666,7 +675,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///  查找类似  的本地化字符串。
+        ///  查找类似 /Public/images/TeamCore5.png 的本地化字符串。
         /// </summary>
         internal static string TeamCore_sub_icon5 {
             get {
@@ -675,7 +684,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///  查找类似  的本地化字符串。
+        ///  查找类似 /Public/images/TeamCore6.png 的本地化字符串。
         /// </summary>
         internal static string TeamCore_sub_icon6 {
             get {
@@ -684,7 +693,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///  查找类似  的本地化字符串。
+        ///  查找类似 /Public/images/TeamCore7.png 的本地化字符串。
         /// </summary>
         internal static string TeamCore_sub_icon7 {
             get {
@@ -837,7 +846,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///  查找类似  的本地化字符串。
+        ///  查找类似 /Public/images/Team1.png 的本地化字符串。
         /// </summary>
         internal static string Team_sub_icon1 {
             get {
@@ -846,7 +855,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///  查找类似  的本地化字符串。
+        ///  查找类似 /Public/images/Team2.png 的本地化字符串。
         /// </summary>
         internal static string Team_sub_icon2 {
             get {
@@ -855,7 +864,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///  查找类似  的本地化字符串。
+        ///  查找类似 /Public/images/Team3.png 的本地化字符串。
         /// </summary>
         internal static string Team_sub_icon3 {
             get {
@@ -864,7 +873,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///  查找类似  的本地化字符串。
+        ///  查找类似 /Public/images/Team4.png 的本地化字符串。
         /// </summary>
         internal static string Team_sub_icon4 {
             get {
@@ -873,7 +882,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///  查找类似  的本地化字符串。
+        ///  查找类似 /Public/images/Team5.png 的本地化字符串。
         /// </summary>
         internal static string Team_sub_icon5 {
             get {
@@ -882,7 +891,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///  查找类似  的本地化字符串。
+        ///  查找类似 /Public/images/Team6.png 的本地化字符串。
         /// </summary>
         internal static string Team_sub_icon6 {
             get {
@@ -891,7 +900,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///  查找类似  的本地化字符串。
+        ///  查找类似 /Public/images/Team7.png 的本地化字符串。
         /// </summary>
         internal static string Team_sub_icon7 {
             get {
@@ -900,7 +909,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///  查找类似  的本地化字符串。
+        ///  查找类似 /Public/images/Team8.png 的本地化字符串。
         /// </summary>
         internal static string Team_sub_icon8 {
             get {

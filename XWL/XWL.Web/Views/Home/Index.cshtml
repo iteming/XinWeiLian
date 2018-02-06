@@ -6,6 +6,9 @@
     img {
         max-width: 100%;
     }
+    .img-circle {
+        height: 100px;
+    }
 </style>
 <!-- Section: home -->
 <section class="hero" id="home">
@@ -20,7 +23,7 @@
         </div>
         <div class="row">
             <div class="col-md-6 text-center">
-                <a href="/Home/Register" class="learn-more-btn btn-scroll">@Resources.Global.Home_btnRegister</a>
+                <a href="@Resources.Global.Home_btnRegister_href" class="learn-more-btn btn-scroll">@Resources.Global.Home_btnRegister</a>
             </div>
             <div class="col-md-6 text-center">
                 <a href="@Resources.Global.Home_WhitePaper_href" target="_blank" class="learn-more-btn btn-scroll">@Resources.Global.Home_btnWhitePaper</a>
@@ -33,7 +36,7 @@
 <section id="project" class="home-section color-dark bg-white">
     <div class="container marginbot-50">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-lg-12">
                 <div class="animatedParent">
                     <div class="section-heading text-center animated bounceInDown">
                         <h2 class="h-bold">@Resources.Global.Project_Title</h2>
@@ -55,7 +58,7 @@
                 </div>
             </div>
             <div class="col-lg-6 animatedParent">
-                <img src="@Resources.Global.Project_Icon" />
+                <img src="@Resources.Global.Project_Icon" style="width:auto"/>
             </div>
         </div>
     </div>
@@ -73,7 +76,7 @@
                             </div>
                             <div class="service-desc">
                                 <h5>@Resources.Global.Project_sub_title1</h5>
-                                <div class="divider-header"></div>
+                                
                                 <p>
                                     @Resources.Global.Project_sub_detail1
                                 </p>
@@ -89,7 +92,7 @@
                             </div>
                             <div class="service-desc">
                                 <h5>@Resources.Global.Project_sub_title2</h5>
-                                <div class="divider-header"></div>
+                                
                                 <p>
                                     @Resources.Global.Project_sub_detail2
                                 </p>
@@ -105,7 +108,7 @@
                             </div>
                             <div class="service-desc">
                                 <h5>@Resources.Global.Project_sub_title3</h5>
-                                <div class="divider-header"></div>
+                                
                                 <p>
                                     @Resources.Global.Project_sub_detail3
                                 </p>
@@ -124,7 +127,7 @@
 <section id="develop" class="home-section color-dark bg-white">
     <div class="container marginbot-50">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-lg-12">
                 <div class="animatedParent">
                     <div class="section-heading text-center animated bounceInDown">
                         <h2 class="h-bold">@Resources.Global.Develop_Title</h2>
@@ -139,6 +142,10 @@
         <div class="container">
             <div class="row animatedParent">
                 <div class="col-md-12">
+                    <img src="@Resources.Global.Develop_Icon" />
+                </div>
+
+                @*<div class="col-md-12">
                     <ul class="timeline">
                         <li>
                             <div class="timeline-badge info">
@@ -194,8 +201,8 @@
                     </ul>
                 </div>
                 <div class="col-md-12">
-                    <img src="@Resources.Global.Develop_IconFoot"/>
-                </div>
+                    <img src="@Resources.Global.Develop_IconFoot" />
+                </div>*@
             </div>
         </div>
     </div>
@@ -206,7 +213,7 @@
 <section id="team" class="home-section color-dark bg-gray">
     <div class="container marginbot-50">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-lg-12">
                 <div class="animatedParent">
                     <div class="section-heading text-center animated bounceInDown">
                         <h2 class="h-bold">@Resources.Global.Team_Title</h2>
@@ -342,7 +349,7 @@
 <section id="teamcore" class="home-section color-dark bg-gray">
     <div class="container marginbot-50">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-lg-12">
                 <div class="animatedParent">
                     <div class="section-heading text-center animated bounceInDown">
                         <h2 class="h-bold">@Resources.Global.TeamCore_Title</h2>
@@ -363,7 +370,7 @@
                         </div>
                         <div class="service-desc">
                             <h5>@Resources.Global.TeamCore_sub_name1</h5>
-                            <div class="divider-header"></div>
+                            
                         </div>
                     </div>
                 </div>
@@ -374,7 +381,7 @@
                         </div>
                         <div class="service-desc">
                             <h5>@Resources.Global.TeamCore_sub_name2</h5>
-                            <div class="divider-header"></div>
+                            
                         </div>
                     </div>
                 </div>
@@ -385,7 +392,7 @@
                         </div>
                         <div class="service-desc">
                             <h5>@Resources.Global.TeamCore_sub_name3</h5>
-                            <div class="divider-header"></div>
+                            
                         </div>
                     </div>
                 </div>
@@ -396,43 +403,43 @@
                         </div>
                         <div class="service-desc">
                             <h5>@Resources.Global.TeamCore_sub_name4</h5>
-                            <div class="divider-header"></div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="row animatedParent">
-                <div class="col-md-3 animated fadeInUp">
+                <div class="col-md-4 animated fadeInUp">
                     <div class="service-box">
                         <div class="service-icon">
                             <img src="@Resources.Global.TeamCore_sub_icon5" class="img-circle" />
                         </div>
                         <div class="service-desc">
                             <h5>@Resources.Global.TeamCore_sub_name5</h5>
-                            <div class="divider-header"></div>
+                            
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 animated fadeInUp slow">
+                <div class="col-md-4 animated fadeInUp slow">
                     <div class="service-box">
                         <div class="service-icon">
                             <img src="@Resources.Global.TeamCore_sub_icon6" class="img-circle" />
                         </div>
                         <div class="service-desc">
                             <h5>@Resources.Global.TeamCore_sub_name6</h5>
-                            <div class="divider-header"></div>
+                            
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 animated fadeInUp slower">
+                <div class="col-md-4 animated fadeInUp slower">
                     <div class="service-box">
                         <div class="service-icon">
                             <img src="@Resources.Global.TeamCore_sub_icon7" class="img-circle" />
                         </div>
                         <div class="service-desc">
                             <h5>@Resources.Global.TeamCore_sub_name7</h5>
-                            <div class="divider-header"></div>
+                            
                         </div>
                     </div>
                 </div>
@@ -445,7 +452,7 @@
 <section id="partner" class="home-section color-dark bg-white">
     <div class="container marginbot-50">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-lg-12">
                 <div class="animatedParent">
                     <div class="section-heading text-center animated bounceInDown">
                         <h2 class="h-bold">@Resources.Global.Partner_Title</h2>

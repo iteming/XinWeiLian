@@ -1128,6 +1128,7 @@
     <Content Include="Public\font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="Public\images\fzgh_img.png" />
     <Content Include="Public\images\fzgh_pic.png" />
+    <Content Include="Public\images\fzgh_pic_english.png" />
     <Content Include="Public\images\hzlogo_01.png" />
     <Content Include="Public\images\hzlogo_02.png" />
     <Content Include="Public\images\hzlogo_03.png" />
@@ -1146,6 +1147,21 @@
     <Content Include="Public\images\num_3.png" />
     <Content Include="Public\images\num_4.png" />
     <Content Include="Public\images\num_5.png" />
+    <Content Include="Public\images\Team1.png" />
+    <Content Include="Public\images\Team2.png" />
+    <Content Include="Public\images\Team3.png" />
+    <Content Include="Public\images\Team4.png" />
+    <Content Include="Public\images\Team5.png" />
+    <Content Include="Public\images\Team6.png" />
+    <Content Include="Public\images\Team7.png" />
+    <Content Include="Public\images\Team8.png" />
+    <Content Include="Public\images\TeamCore1.png" />
+    <Content Include="Public\images\TeamCore2.png" />
+    <Content Include="Public\images\TeamCore3.png" />
+    <Content Include="Public\images\TeamCore4.png" />
+    <Content Include="Public\images\TeamCore5.png" />
+    <Content Include="Public\images\TeamCore6.png" />
+    <Content Include="Public\images\TeamCore7.png" />
     <Content Include="Public\img\bullet.png" />
     <Content Include="Public\img\cbp-sprite.png" />
     <Content Include="Public\img\hero-bg.jpg" />
@@ -1387,6 +1403,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Public\font-awesome\scss\font-awesome.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Register.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

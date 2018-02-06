@@ -15,5 +15,10 @@ namespace XWL.Web.Controllers
             var obj = new Repository<Admin>().Get().FirstOrDefault();
             return View();
         }
+        public ActionResult Register()
+        {
+            var obj = new Repository<Admin>().Get().FirstOrDefault();
+            return View();
+        }
     }
 }
