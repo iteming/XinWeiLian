@@ -46,6 +46,12 @@
                                 <li><a href="#develop">@Resources.Global.Menu_Develop</a></li>
                                 <li><a href="#team">@Resources.Global.Menu_Team</a></li>
                                 <li><a href="#partner">@Resources.Global.Menu_Partner</a></li>
+                                <li>
+                                    <select id="localization" class="btn btn-xs btn-default nav-select">
+                                        <option value="/zh"> @Resources.Global.Lang_Chinese </option>
+                                        <option value="/en"> @Resources.Global.Lang_English </option>
+                                    </select>
+                                </li>
                             </ul>
                         </div>
                         <!-- /.Navbar-collapse -->
@@ -66,10 +72,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <ul class="footer-menu">
-                        <li><a href="/zh">@Resources.Global.Lang_Chinese</a></li>
-                        <li><a href="/en">@Resources.Global.Lang_English</a></li>
-                    </ul>
                 </div>
                 <div class="col-md-6 text-right copyright">
                     @DateTime.Now.Year NEDT Foundation Limited. All Rights for Reserved.
@@ -95,5 +97,14 @@
     <script src="~/Public/js/custom.js"></script>
     <script src="~/Public/js/css3-animate-it.js"></script>
     @RenderSection("scripts", required: false)
+    <script>
+        $("#localization").change(function () {
+            location.href = $(this).val();
+        });
+
+        $(document).ready(function () {
+            $("#localization").val('@Resources.Global.Lang');
+        });
+    </script>
 </body>
 </html>
