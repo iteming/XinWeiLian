@@ -15,7 +15,6 @@ namespace XWL.Web.Controllers
     {
         public ActionResult Index()
         {
-            var obj = new Repository<Admin>().Get().FirstOrDefault();
             return View();
         }
         public ActionResult Register()

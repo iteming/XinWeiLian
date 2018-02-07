@@ -410,7 +410,7 @@ Cryptographer</value>
     <value>Team</value>
   </data>
   <data name="Web_Logo" xml:space="preserve">
-    <value>/Public/images/logo_icon.png</value>
+    <value>/Public/images/logo_english.png</value>
   </data>
   <data name="Web_Name" xml:space="preserve">
     <value>NedToken</value>
