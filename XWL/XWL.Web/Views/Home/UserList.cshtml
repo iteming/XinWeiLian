@@ -1,0 +1,109 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutManage.cshtml";
+    ViewBag.Title = "注册用户管理";
+}
+
+@section styles{
+    <link href="~/public/plugins/jquery.jqgrid/css/ui.jqgrid.css" rel="stylesheet" />
+    <link href="~/public/plugins/jquery.jqgrid/css/style.min.css" rel="stylesheet" />
+    <link href="~/Public/plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" />
+}
+
+<section id="project" class="home-section color-dark bg-blue">
+    <div class="container animatedParent bg-white p-t-lg p-b-lg" ng-app="list" ng-controller="listCtrl">
+        <div class="row">
+            <div class="col-lg-12 animated bounceInDown">
+                <form class="form-inline m-sm">
+                    <div class="form-group">
+                        <label for="BeginTime">起始日期</label>
+                        <input id="BeginTime" type="text" data-type="dateIso" class="form-control"
+                               data-date-format="yyyy-mm-dd 00:00:00" placeholder="起始注册日期"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="EndTime">截止日期</label>
+                        <input id="EndTime" type="text" data-type="dateIso" class="form-control"
+                               data-date-format="yyyy-mm-dd 23:59:59" placeholder="截止注册日期" />
+                    </div>
+                    <div class="form-group">
+                        <label for="txtSearchKey">关键字</label>
+                        <input id="txtSearchKey" type="text" class="form-control" placeholder="用户名/手机号/邮箱">
+                    </div>
+                    <div class="form-group">
+                        <button id="btnSearch" class="btn btn-sm btn-primary" type="button">
+                                <i class="fa fa-search"></i> 搜索
+                        </button>
+                        <button id="btnDel" type="button" class="btn btn-sm btn-danger " onclick="delData()">
+                            <i class="fa fa-times"></i>删除
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="jqGrid_wrapper">
+                    <table id="jqGridList"></table>
+                    <div id="jqGridPager"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@section scripts{
+    <script src="~/public/plugins/jquery.jqgrid/js/jquery.peity.min.js"></script>
+    <script src="~/public/plugins/jquery.jqgrid/js/grid.locale-cn.js"></script>
+    <script src="~/public/plugins/jquery.jqgrid/js/jquery.jqGrid.js"></script>
+    <script src="~/public/plugins/jquery.jqgrid/js/content.min.js"></script>
+    <script src="~/Public/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="~/public/plugins/layer-v3.1.1/layer.js"></script>
+    <script src="~/Public/js/JqueryExtend.js"></script>
+    <script>
+        $(document).ready(function () {
+            var config = {
+                title: '注册用户管理',
+                shrinkToFit: true, //超出宽度自动滚动
+                url: '@Resources.Global.Lang/Home/GetUserList',
+                mtype: 'post',
+                colNames: ['主键ID', '姓名', '电子邮箱', '电话', '以太币钱包地址', '注册时间'],
+                colModel: [
+                    { name: 'UserId', index: 'UserId', hidden: true, width: 60, key: true },
+                    { name: 'Name', index: 'Name', editable: true, width: 120 },
+                    { name: 'Email', index: 'Email', width: 100 },
+                    { name: 'Phone', index: 'Phone', width: 100 },
+                    { name: 'WalletAddress', index: 'WalletAddress' },
+                    {
+                        name: 'RegisterTime',
+                        index: 'RegisterTime',
+                        width: 90,
+                        formatter: function(cellValue, options, rowObject) {
+                            return format(cellValue, "yyyy-MM-dd hh:mm:ss");
+                        }
+                    }
+                ],
+                rowNum: 10,
+                rowList: [10, 20, 30],
+                multiselect: true,
+                datastr: "jsonstring"
+            };
+            JucheapGrid.Load(config);
+            $("#btnSearch").bind("click", searchData);
+
+            $("#BeginTime").datepicker({ todayHighlight: true, autoclose: true });
+            $("#EndTime").datepicker({ todayHighlight: true, autoclose: true });
+        });
+
+        // 导航按钮事件
+        function searchData() { //搜索
+            var json = {
+                keywords: $("#txtSearchKey").val(),
+                BeginTime: $("#BeginTime").val(),
+                EndTime: $("#EndTime").val()
+            };
+            XPage.Search(json);
+        }
+
+        function delData() { //删除
+            XPage.DelData("@Resources.Global.Lang/Home/UserDelete");
+        }
+    </script>
+}

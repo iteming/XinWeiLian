@@ -443,4 +443,10 @@
   <data name="Home_btnRegister_href" xml:space="preserve">
     <value>/zh/Home/Register</value>
   </data>
+  <data name="Lang" xml:space="preserve">
+    <value>/zh</value>
+  </data>
+  <data name="Foot_Manage" xml:space="preserve">
+    <value>系统管理</value>
+  </data>
 </root>

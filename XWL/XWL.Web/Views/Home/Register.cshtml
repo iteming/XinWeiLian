@@ -1,7 +1,117 @@
-﻿
-@{
-    ViewBag.Title = "Register";
+﻿@{
+    Layout = "~/Views/Shared/_LayoutManage.cshtml";
+    ViewBag.Title = "注册用户";
 }
 
-<h2>Register</h2>
+<section id="project" class="home-section color-dark bg-blue">
+    <div class="container marginbot-50 animatedParent bg-white">
+        <div class="row">
+            <div class="col-lg-12 animated bounceInDown">
+                <form role="form">
+                    <div class="form-group m-t">
+                        <span>@(new HtmlString(Resources.Global.Register_Description))</span>
+                    </div>
+                    <div class="form-group m-t-xl">
+                        <div class="section-heading text-center">
+                            <h2 class="h-bold">@Resources.Global.Register_Title</h2>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Name">@Resources.Global.Register_Name</label>
+                        <input id="Name" type="text" class="form-control" placeholder="姓名">
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">@Resources.Global.Register_Email</label>
+                        <input id="Email" type="text" class="form-control" placeholder="电子邮箱">
+                    </div>
+                    <div class="form-group">
+                        <label for="EmailConfirm">@Resources.Global.Register_EmailConfirm</label>
+                        <input id="EmailConfirm" type="text" class="form-control" placeholder="确认邮箱">
+                    </div>
+                    <div class="form-group">
+                        <label for="Phone">@Resources.Global.Register_Phone</label>
+                        <input id="Phone" type="text" class="form-control" placeholder="电话">
+                    </div>
+                    <div class="form-group">
+                        <label for="WalletAddress">@Resources.Global.Register_WalletAddress</label>
+                        <input id="WalletAddress" type="text" class="form-control" placeholder="以太币钱包地址">
+                    </div>
 
+                    <div class="checkbox">
+                        <label><input id="info1" type="checkbox">@Resources.Global.Register_Info1</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input id="info2" type="checkbox">@Resources.Global.Register_Info2</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input id="info3" type="checkbox">@Resources.Global.Register_Info3</label>
+                    </div>
+                    <div class="form-group text-center">
+                        <button id="btnSubmit" type="button" class="btn btn-default">@Resources.Global.Register_btnConfirm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section scripts {
+    <script src="~/public/plugins/layer-v3.1.1/layer.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".Website").attr("target", '_blank');
+            $(".Privacy").attr("target", '_blank');
+            $(".Website").attr("href", '@Resources.Global.Register_Website_href');
+            $(".Privacy").attr("href", '@Resources.Global.Register_Privacy_href');
+        });
+
+        $("#btnSubmit").click(function () {
+            if (!$("#info1").is(":checked") ||
+                !$("#info2").is(":checked") ||
+                !$("#info3").is(":checked")) {
+                layer.alert("请同意并确认相关协议和法律声明!");
+                return;
+            }
+            var name = $("#Name").val();
+            var email = $("#Email").val();
+            var emailConfirm = $("#EmailConfirm").val();
+            var phone = $("#Phone").val();
+            var walletAddress = $("#WalletAddress").val();
+
+            if (name.trim() == '') {
+                layer.alert("姓名不能为空!");
+                return;
+            }
+            if (email.trim() == '' || emailConfirm.trim() == '') {
+                layer.alert("邮箱不能为空!");
+                return;
+            }
+            if (phone.trim() == '') {
+                layer.alert("电话不能为空!");
+                return;
+            }
+            if (email.trim() != emailConfirm.trim()) {
+                layer.alert("确认邮箱输入不一致!");
+                return;
+            }
+
+            $.ajax({
+                url: '@Resources.Global.Lang/Home/SubmitRegister',
+                type: "post",
+                dataType: "json",
+                data: {
+                    name: name,
+                    email: email,
+                    phone: phone,
+                    walletAddress: walletAddress
+                },
+                success: function (data) {
+                    layer.alert(data.Message);
+                    if (data.Ret > 0) {
+                        window.location.href = "@Resources.Global.Lang";
+                    }
+                }
+            });
+        });
+    </script>
+}

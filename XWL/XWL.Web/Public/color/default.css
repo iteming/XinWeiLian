@@ -8,6 +8,12 @@ a:focus {
 	border-top: 5px solid #000040;
 }
 
+.nav > li.active {
+    border-bottom: 4px solid #000040;
+    background: #293846;
+}
+
+
 a,.tp-caption a.btn:hover {
 	color: #000040;
 }
@@ -72,4 +78,19 @@ footer a.totop:hover {
   color: #fff;
   background-color: #000040;
   border-color: #000040;
+}
+
+
+.btn-default {
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #000040;
+    outline: 0;
+    color: #fff;
+    background-color: #000;
 }

@@ -466,4 +466,10 @@ Cryptographer</value>
   <data name="Home_btnRegister_href" xml:space="preserve">
     <value>/en/Home/Register</value>
   </data>
+  <data name="Lang" xml:space="preserve">
+    <value>/en</value>
+  </data>
+  <data name="Foot_Manage" xml:space="preserve">
+    <value>SystemManage</value>
+  </data>
 </root>

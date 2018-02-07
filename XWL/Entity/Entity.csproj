@@ -64,7 +64,6 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Param\ParamJqGrid.cs" />
     <Compile Include="Param\ParamLogin.cs" />
-    <Compile Include="Param\ParamPager.cs" />
     <Compile Include="Param\ParamUserList.cs" />
     <Compile Include="PredicateBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

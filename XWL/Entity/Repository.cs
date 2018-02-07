@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Data.Entity.Validation;
+using System.Diagnostics;
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace Entity
 {
@@ -25,32 +28,31 @@ namespace Entity
                 _context = new DbHelper();
             }
         }
-
-        /// <summary>
-        /// Get entity by identifier
-        /// </summary>
-        /// <param name="id">Identifier</param>
-        /// <returns>Entity</returns>
-        public virtual T GetById(object id)
-        {
-            return Entities.Find(id);
-        }
-
+        
         public virtual IQueryable<T> Get()
         {
             return Entities.AsQueryable();
         }
 
-        public virtual IQueryable<T> Get(System.Linq.Expressions.Expression<Func<T, bool>> filter)
+        public virtual IQueryable<T> Get(Expression<Func<T, bool>> filter)
         {
             return Entities.Where(filter).AsQueryable();
+        }
+
+        public virtual IQueryable<T> Get<TOrderKey>(Expression<Func<T, bool>> filter, 
+            int page, int limit, Expression<Func<T, TOrderKey>> sort, bool isAsc = true)
+        {
+            if (isAsc)
+                return Entities.Where(filter).OrderBy(sort).Skip((page - 1) * limit).Take(limit).AsQueryable();
+            else
+                return Entities.Where(filter).OrderByDescending(sort).Skip((page - 1) * limit).Take(limit).AsQueryable();
         }
 
         /// <summary>
         /// Insert entity
         /// </summary>
         /// <param name="entity">Entity</param>
-        public virtual void Insert(T entity)
+        public virtual int Insert(T entity)
         {
             try
             {
@@ -59,7 +61,7 @@ namespace Entity
 
                 Entities.Add(entity);
 
-                _context.SaveChanges();
+                return _context.SaveChanges();
             }
             catch (DbEntityValidationException dbEx)
             {
@@ -70,16 +72,12 @@ namespace Entity
                         msg += string.Format("Property: {0} Error: {1}", validationError.PropertyName, validationError.ErrorMessage) + Environment.NewLine;
 
                 var fail = new Exception(msg, dbEx);
-                //Debug.WriteLine(fail.Message, fail);
-                throw fail;
+                Debug.WriteLine(fail.Message, fail);
+                return 0;
             }
         }
-
-        /// <summary>
-        /// Insert list
-        /// </summary>
-        /// <param name="list">Entity</param>
-        public virtual void Insert(List<T> list)
+        
+        public virtual int Insert(List<T> list)
         {
             try
             {
@@ -88,38 +86,9 @@ namespace Entity
                     if (entity == null)
                         throw new ArgumentNullException("entity");
 
-                    //_context.Entry(entity).State = EntityState.Added;
-
                     Entities.Add(entity);
                 }
-                _context.SaveChanges();
-            }
-            catch (DbEntityValidationException dbEx)
-            {
-                var msg = string.Empty;
-
-                foreach (var validationErrors in dbEx.EntityValidationErrors)
-                foreach (var validationError in validationErrors.ValidationErrors)
-                    msg += Environment.NewLine + string.Format("Property: {0} Error: {1}", validationError.PropertyName, validationError.ErrorMessage);
-
-                var fail = new Exception(msg, dbEx);
-                //Debug.WriteLine(fail.Message, fail);
-                throw fail;
-            }
-        }
-
-        /// <summary>
-        /// Update entity
-        /// </summary>
-        /// <param name="entity">Entity</param>
-        public virtual void Update(T entity)
-        {
-            try
-            {
-                if (entity == null)
-                    throw new ArgumentNullException("entity");
-                
-                _context.SaveChanges();
+                return _context.SaveChanges();
             }
             catch (DbEntityValidationException dbEx)
             {
@@ -130,16 +99,39 @@ namespace Entity
                         msg += Environment.NewLine + string.Format("Property: {0} Error: {1}", validationError.PropertyName, validationError.ErrorMessage);
 
                 var fail = new Exception(msg, dbEx);
-                //Debug.WriteLine(fail.Message, fail);
-                throw fail;
+                Debug.WriteLine(fail.Message, fail);
+                return 0;
             }
         }
+        
+        public virtual int Update(T entity)
+        {
+            try
+            {
+                if (entity == null)
+                    throw new ArgumentNullException("entity");
 
-        /// <summary>
-        /// Update list
-        /// </summary>
-        /// <param name="list">Entity</param>
-        public virtual void Update(List<T> list)
+                Entities.Attach(entity);
+                _context.Entry(entity).State = EntityState.Modified;
+                //Entities.AddOrUpdate(entity);
+
+                return _context.SaveChanges();
+            }
+            catch (DbEntityValidationException dbEx)
+            {
+                var msg = string.Empty;
+
+                foreach (var validationErrors in dbEx.EntityValidationErrors)
+                    foreach (var validationError in validationErrors.ValidationErrors)
+                        msg += Environment.NewLine + string.Format("Property: {0} Error: {1}", validationError.PropertyName, validationError.ErrorMessage);
+
+                var fail = new Exception(msg, dbEx);
+                Debug.WriteLine(fail.Message, fail);
+                return 0;
+            }
+        }
+        
+        public virtual int Update(List<T> list)
         {
             try
             {
@@ -147,40 +139,36 @@ namespace Entity
                 {
                     if (entity == null)
                         throw new ArgumentNullException("entity");
-
-                    //Entities.Attach(entity);
-                    //_context.Entry(entity).State = EntityState.Modified;
+                    
+                    Entities.AddOrUpdate(entity);
                 }
-                _context.SaveChanges();
+                return _context.SaveChanges();
             }
             catch (DbEntityValidationException dbEx)
             {
                 var msg = string.Empty;
 
                 foreach (var validationErrors in dbEx.EntityValidationErrors)
-                foreach (var validationError in validationErrors.ValidationErrors)
-                    msg += Environment.NewLine + string.Format("Property: {0} Error: {1}", validationError.PropertyName, validationError.ErrorMessage);
+                    foreach (var validationError in validationErrors.ValidationErrors)
+                        msg += Environment.NewLine + string.Format("Property: {0} Error: {1}", validationError.PropertyName, validationError.ErrorMessage);
 
                 var fail = new Exception(msg, dbEx);
-                //Debug.WriteLine(fail.Message, fail);
-                throw fail;
+                Debug.WriteLine(fail.Message, fail);
+                return 0;
             }
         }
-
-        /// <summary>
-        /// Delete entity
-        /// </summary>
-        /// <param name="entity">Entity</param>
-        public virtual void Delete(T entity)
+        
+        public virtual int Delete(T entity)
         {
             try
             {
+
                 if (entity == null)
                     throw new ArgumentNullException("entity");
 
                 Entities.Remove(entity);
 
-                _context.SaveChanges();
+                return _context.SaveChanges();
             }
             catch (DbEntityValidationException dbEx)
             {
@@ -191,16 +179,12 @@ namespace Entity
                         msg += Environment.NewLine + string.Format("Property: {0} Error: {1}", validationError.PropertyName, validationError.ErrorMessage);
 
                 var fail = new Exception(msg, dbEx);
-                //Debug.WriteLine(fail.Message, fail);
-                throw fail;
+                Debug.WriteLine(fail.Message, fail);
+                return 0;
             }
         }
         
-        /// <summary>
-        /// Delete list
-        /// </summary>
-        /// <param name="list">Entity</param>
-        public virtual void Delete(List<T> list)
+        public virtual int Delete(List<T> list)
         {
             try
             {
@@ -210,20 +194,21 @@ namespace Entity
                         throw new ArgumentNullException("entity");
 
                     _context.Entry(entity).State = EntityState.Deleted;
+                    Entities.Remove(entity);
                 }
-                _context.SaveChanges();
+                return _context.SaveChanges();
             }
             catch (DbEntityValidationException dbEx)
             {
                 var msg = string.Empty;
 
                 foreach (var validationErrors in dbEx.EntityValidationErrors)
-                foreach (var validationError in validationErrors.ValidationErrors)
-                    msg += Environment.NewLine + string.Format("Property: {0} Error: {1}", validationError.PropertyName, validationError.ErrorMessage);
+                    foreach (var validationError in validationErrors.ValidationErrors)
+                        msg += Environment.NewLine + string.Format("Property: {0} Error: {1}", validationError.PropertyName, validationError.ErrorMessage);
 
                 var fail = new Exception(msg, dbEx);
-                //Debug.WriteLine(fail.Message, fail);
-                throw fail;
+                Debug.WriteLine(fail.Message, fail);
+                return 0;
             }
         }
 
@@ -238,9 +223,9 @@ namespace Entity
             }
         }
 
-
         /// <summary>
-        /// Gets a table with "no tracking" enabled (EF feature) Use it only when you load record(s) only for read-only operations
+        /// Gets a table with "no tracking" enabled 
+        /// (EF feature) Use it only when you load record(s) only for read-only operations
         /// </summary>
         public virtual IQueryable<T> TableNoTracking
         {
@@ -249,7 +234,6 @@ namespace Entity
                 return Entities.AsNoTracking();
             }
         }
-
 
         /// <summary>
         /// Entities
@@ -262,6 +246,17 @@ namespace Entity
                     _entities = _context.Set<T>();
                 return _entities;
             }
+        }
+
+        public int ExecuteSql(string sqlString)
+        {
+            return this._context.Database.ExecuteSqlCommand(sqlString);
+        }
+
+        public void Dispose()
+        {
+            if (this._context != null)
+                this._context.Dispose();
         }
     }
 }

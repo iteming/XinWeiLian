@@ -8,9 +8,10 @@ namespace Entity.Base
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int UserId { get; set; }
-        public string NickName { get; set; }
-        public string PhoneNo { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
+        public string WalletAddress { get; set; }
         public Nullable<DateTime> RegisterTime { get; set; }
-        public Nullable<DateTime> LastLoginTime { get; set; }
     }
 }

@@ -18,6 +18,8 @@ namespace Entity
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            //Database.SetInitializer<DbHelper>(null);
+            //base.OnModelCreating(modelBuilder);
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>(); //表名为类名，不是带s的表名  //移除复数表名的契约
         }
 
