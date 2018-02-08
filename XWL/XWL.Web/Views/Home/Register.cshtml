@@ -57,6 +57,7 @@
 
 @section scripts {
     <script src="~/public/plugins/layer-v3.1.1/layer.js"></script>
+    <script src="~/Public/js/validate.js"></script>
     <script>
         $(document).ready(function() {
             $(".Website").attr("target", '_blank');
@@ -90,6 +91,14 @@
                 layer.alert("电话不能为空!");
                 return;
             }
+            if (!validate.checkEmail(email)) {
+                layer.alert("电子邮箱输入格式不正确!");
+                return;
+            }
+            if (!validate.checkMobilePhone(phone) && !validate.checkTelephone(phone)) {
+                layer.alert("电话输入格式不正确!");
+                return;
+            }
             if (email.trim() != emailConfirm.trim()) {
                 layer.alert("确认邮箱输入不一致!");
                 return;
@@ -106,10 +115,15 @@
                     walletAddress: walletAddress
                 },
                 success: function (data) {
-                    layer.alert(data.Message);
-                    if (data.Ret > 0) {
-                        window.location.href = "@Resources.Global.Lang";
-                    }
+                    layer.open({
+                        content:data.Message,
+                        yes:function (index) {//弹出框的索引
+                            layer.close(index);//关闭当前对话框
+                            if (data.Ret > 0) {
+                                window.location.href = "@Resources.Global.Lang";
+                            }
+                        }
+                    });
                 }
             });
         });
