@@ -16,6 +16,17 @@
     <link href="~/Public/color/default.css" rel="stylesheet" type="text/css" />
     <link href="~/Public/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     @RenderSection("styles", required: false)
+    @if (Resources.Global.Lang == "/zh")
+    {
+        <style>
+            .hero h1 {
+                font-size: 30px;
+            }
+            .hero p {
+                font-size: 19px;
+            }
+        </style>
+    }
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
     

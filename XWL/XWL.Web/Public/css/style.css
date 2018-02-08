@@ -502,7 +502,7 @@ hr {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding: 200px 0 200px 0;
+    padding: 130px 0 250px 0;
     height: auto;
 }
 
@@ -528,7 +528,8 @@ hr {
 .learn-more-btn {
     /*background: rgba(61, 201, 179, 1);*/
     background: #000040;
-    padding: 20px 40px;
+    /*padding: 20px 40px;*/
+    padding: 15px 15px;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;

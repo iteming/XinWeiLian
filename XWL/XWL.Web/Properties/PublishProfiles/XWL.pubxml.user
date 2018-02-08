@@ -10,13 +10,25 @@
   </PropertyGroup>
   <ItemGroup>
     <File Include="App_GlobalResources/Global.en.resx">
-      <publishTime>02/07/2018 15:10:28</publishTime>
+      <publishTime>02/08/2018 09:35:33</publishTime>
     </File>
     <File Include="App_GlobalResources/Global.resx">
-      <publishTime>02/07/2018 15:10:30</publishTime>
+      <publishTime>02/08/2018 09:35:33</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>02/06/2018 09:51:23</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>02/08/2018 11:00:54</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>02/08/2018 11:00:54</publishTime>
+    </File>
+    <File Include="bin/App_GlobalResources.compiled">
+      <publishTime>02/08/2018 11:00:53</publishTime>
+    </File>
+    <File Include="bin/App_GlobalResources.dll">
+      <publishTime>02/08/2018 11:00:53</publishTime>
     </File>
     <File Include="bin/BouncyCastle.Crypto.dll">
       <publishTime>02/06/2018 09:51:22</publishTime>
@@ -24,8 +36,11 @@
     <File Include="bin/Common.dll">
       <publishTime>02/07/2018 15:23:48</publishTime>
     </File>
+    <File Include="bin/en/App_GlobalResources.resources.dll">
+      <publishTime>02/08/2018 11:00:53</publishTime>
+    </File>
     <File Include="bin/Entity.dll">
-      <publishTime>02/07/2018 15:23:48</publishTime>
+      <publishTime>02/08/2018 10:56:25</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>02/06/2018 09:51:23</publishTime>
@@ -145,7 +160,7 @@
       <publishTime>02/06/2018 09:51:24</publishTime>
     </File>
     <File Include="bin/XWL.Web.dll">
-      <publishTime>02/07/2018 15:23:52</publishTime>
+      <publishTime>02/08/2018 10:56:30</publishTime>
     </File>
     <File Include="bin/zh-Hans/EntityFramework.resources.dll">
       <publishTime>02/06/2018 09:51:23</publishTime>
@@ -182,6 +197,9 @@
     </File>
     <File Include="packages.config">
       <publishTime>02/06/2018 10:27:44</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>02/08/2018 11:00:51</publishTime>
     </File>
     <File Include="Public/color/default.css">
       <publishTime>02/07/2018 14:01:54</publishTime>
@@ -229,7 +247,7 @@
       <publishTime>02/07/2018 14:48:22</publishTime>
     </File>
     <File Include="Public/css/style.css">
-      <publishTime>02/07/2018 15:13:15</publishTime>
+      <publishTime>02/08/2018 10:50:19</publishTime>
     </File>
     <File Include="Public/css/timeline.css">
       <publishTime>02/06/2018 16:34:50</publishTime>
@@ -519,6 +537,9 @@
     <File Include="Public/js/stellar.js">
       <publishTime>02/06/2018 14:37:37</publishTime>
     </File>
+    <File Include="Public/js/validate.js">
+      <publishTime>02/08/2018 09:49:40</publishTime>
+    </File>
     <File Include="Public/plugins/bootstrap-datepicker/css/bootstrap-datetimepicker.min.css">
       <publishTime>02/07/2018 13:19:06</publishTime>
     </File>
@@ -595,13 +616,13 @@
       <publishTime>02/07/2018 11:25:23</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>02/07/2018 09:35:59</publishTime>
+      <publishTime>02/08/2018 11:00:30</publishTime>
     </File>
     <File Include="Views/Home/Login.cshtml">
       <publishTime>02/07/2018 15:02:35</publishTime>
     </File>
     <File Include="Views/Home/Register.cshtml">
-      <publishTime>02/07/2018 14:18:42</publishTime>
+      <publishTime>02/08/2018 09:59:55</publishTime>
     </File>
     <File Include="Views/Home/UserList.cshtml">
       <publishTime>02/07/2018 14:38:38</publishTime>
@@ -610,16 +631,16 @@
       <publishTime>02/06/2018 09:51:22</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>02/07/2018 15:13:34</publishTime>
+      <publishTime>02/08/2018 10:42:33</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutManage.cshtml">
-      <publishTime>02/07/2018 15:13:52</publishTime>
+      <publishTime>02/08/2018 10:42:51</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>02/06/2018 09:51:22</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>02/07/2018 15:23:53</publishTime>
+      <publishTime>02/08/2018 10:59:39</publishTime>
     </File>
   </ItemGroup>
 </Project>

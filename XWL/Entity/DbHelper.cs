@@ -18,8 +18,6 @@ namespace Entity
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            //Database.SetInitializer<DbHelper>(null);
-            //base.OnModelCreating(modelBuilder);
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>(); //表名为类名，不是带s的表名  //移除复数表名的契约
         }
 
@@ -30,13 +28,20 @@ namespace Entity
                 AutomaticMigrationsEnabled = true;//任何Model Class的修改將會直接更新DB
                 AutomaticMigrationDataLossAllowed = true;
             }
+
+            protected override void Seed(DbHelper context)
+            {
+                //  This method will be called after migrating to the latest version.
+                //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
+                //  to avoid creating duplicate seed data.
+            }
         }
 
         public class MyDatabaseInitializer : CreateDatabaseIfNotExists<DbHelper>
         {
             protected override void Seed(DbHelper context)
             {
-                context.Admin.Add(new Base.Admin { UserName = "jiazk", Password = "1", IsPrimary = true });
+                context.Admin.Add(new Base.Admin { UserName = "NEDT", Password = "123456", IsPrimary = true });
                 // ... 初始化数据代码
                 context.SaveChanges();
             }
