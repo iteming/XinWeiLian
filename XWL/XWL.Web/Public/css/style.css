@@ -509,7 +509,7 @@ hr {
     .hero h1 {
         font-size: 40px;
         letter-spacing: 12px;
-        margin: 40px 0 10px;
+        margin: 0 0 40px;
         font-weight: 900;
         color: #fff;
     }
@@ -523,6 +523,7 @@ hr {
         font-size: 24px;
         font-weight: 400;
         color: #fefefe;
+        margin: 10px 0 10px 0;
     }
 
 .learn-more-btn {
