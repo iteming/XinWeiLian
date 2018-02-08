@@ -36,9 +36,7 @@
 
         if (scrollTop <= etse) {
           if (s.currentTop !== null) {
-            s.stickyElement
-              .css('position', '')
-              .css('top', '');
+            s.stickyElement.css('position', 'fixed').css('top', '0px');
             s.stickyElement.parent().removeClass(s.className);
             s.currentTop = null;
           }
@@ -52,10 +50,7 @@
             newTop = s.topSpacing;
           }
           if (s.currentTop != newTop) {
-            s.stickyElement
-              .css('position', 'fixed')
-              .css('top', newTop);
-
+            s.stickyElement.css('position', 'fixed').css('top', newTop);
             if (typeof s.getWidthFrom !== 'undefined') {
               s.stickyElement.css('width', $(s.getWidthFrom).width());
             }

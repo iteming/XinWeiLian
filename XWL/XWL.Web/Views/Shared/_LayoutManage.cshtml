@@ -31,7 +31,7 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
     
     <!-- Navigation -->
-    <div id="navigation">
+    <div id="navigation" style="position: fixed; top: 0px;">
         <nav class="navbar navbar-custom" role="navigation">
             <div class="container">
                 <div class="row">
@@ -121,6 +121,11 @@
     <script>
         $("#localization").change(function () {
             location.href = $(this).val();
+        });
+
+        $(".nav > li > a").click(function () {
+            $("#menu").removeClass("in");
+            $("#menu").attr("height", "1px");
         });
 
         $(document).ready(function () {

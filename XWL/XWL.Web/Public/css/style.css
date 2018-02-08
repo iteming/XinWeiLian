@@ -1644,4 +1644,5 @@ a.btn:focus {
     position: relative;
     display: block;
     padding: 10px 15px;
+    width: 100%;
 }
