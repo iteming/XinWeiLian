@@ -2,6 +2,7 @@
 using Entity.Base;
 using System.Data.Entity.Migrations;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using System.Linq;
 
 namespace Entity
 {
@@ -11,9 +12,6 @@ namespace Entity
         {
             //自动创建表，如果Entity有改到就更新到表结构
             Database.SetInitializer<DbHelper>(new MigrateDatabaseToLatestVersion<DbHelper, DbMigrationsConfiguration>());
-
-            //// 在使用context前调用一次
-            //Database.SetInitializer<DbHelper>(new MyDatabaseInitializer());
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -34,22 +32,15 @@ namespace Entity
                 //  This method will be called after migrating to the latest version.
                 //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
                 //  to avoid creating duplicate seed data.
-                
-                context.Admin.Add(new Base.Admin { UserName = "NEDT", Password = "123456", IsPrimary = true });
-                // ... 初始化数据代码
-                context.SaveChanges();
+
+                if (context.Admin.Where(f => f.UserName == "NEDT").FirstOrDefault() == null)
+                {
+                    context.Admin.Add(new Base.Admin { UserName = "NEDT", Password = "123456", IsPrimary = true });
+                    // ... 初始化数据代码
+                    context.SaveChanges();
+                }
             }
         }
-
-        //public class MyDatabaseInitializer : CreateDatabaseIfNotExists<DbHelper>
-        //{
-        //    protected override void Seed(DbHelper context)
-        //    {
-        //        context.Admin.Add(new Base.Admin { UserName = "NEDT", Password = "123456", IsPrimary = true });
-        //        // ... 初始化数据代码
-        //        context.SaveChanges();
-        //    }
-        //}
 
         public DbSet<Admin> Admin { get; set; }
         public DbSet<User> User { get; set; }
