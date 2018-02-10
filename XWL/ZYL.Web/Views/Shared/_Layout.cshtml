@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+
+    <!-- css -->
+    <link href="~/Public/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Public/css/nivo-lightbox.css" rel="stylesheet" type="text/css" />
+    <link href="~/Public/css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+    <link href="~/Public/css/animations.css" rel="stylesheet" type="text/css" />
+    <link href="~/Public/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/Public/css/timeline.css" rel="stylesheet" />
+    <link href="~/Public/color/default.css" rel="stylesheet" type="text/css" />
+    <link href="~/Public/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    @RenderSection("styles", required: false)
+    @if (Resources.Global.Lang == "/zh")
+    {
+        <style>
+            .hero h1 {
+                font-size: 30px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+        </style>
+    }
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    
+    <!-- Navigation -->
+    <div id="navigation" style="position: fixed; top: 0px;">
+        <nav class="navbar navbar-custom" role="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="site-logo">
+                            <a href="/" class="brand">
+                                <img height="40" src="@Resources.Global.Web_Logo"/>
+                                @*@Resources.Global.Web_Name*@
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-9">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="menu">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="active"><a href="#home">@Resources.Global.Menu_Home</a></li>
+                                <li><a href="#project">@Resources.Global.Menu_Project</a></li>
+                                <li><a href="#develop">@Resources.Global.Menu_Develop</a></li>
+                                <li><a href="#team">@Resources.Global.Menu_Team</a></li>
+                                <li><a href="#partner">@Resources.Global.Menu_Partner</a></li>
+                                <li>
+                                    <select id="localization" class="btn btn-xs btn-default nav-select">
+                                        <option value="/zh"> @Resources.Global.Lang_Chinese </option>
+                                        <option value="/en"> @Resources.Global.Lang_English </option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.Navbar-collapse -->
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </nav>
+    </div>
+    <!-- /Navigation -->
+    
+    <!-- Section: Content -->
+    @RenderBody()
+    <!-- /Section: Content -->
+    
+    <!-- Section: footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                </div>
+                <div class="col-md-6 text-right copyright">
+                    @DateTime.Now.Year NEDT Foundation Limited. All Rights for Reserved.
+                    <div>
+                        <a class="color-white" href="@Resources.Global.Lang/Home/Login/">@Resources.Global.Foot_Manage</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Section: footer -->
+
+    <!-- Core JavaScript Files -->
+    <script src="~/Public/js/jquery.min.js"></script>
+    <script src="~/Public/js/bootstrap.min.js"></script>
+    <script src="~/Public/js/jquery.sticky.js"></script>
+    <script src="~/Public/js/jquery.easing.min.js"></script>
+    <script src="~/Public/js/jquery.scrollTo.js"></script>
+    <script src="~/Public/js/jquery.appear.js"></script>
+    <script src="~/Public/js/stellar.js"></script>
+    <script src="~/Public/js/nivo-lightbox.min.js"></script>
+
+    <script src="~/Public/js/custom.js"></script>
+    <script src="~/Public/js/css3-animate-it.js"></script>
+    @RenderSection("scripts", required: false)
+    <script>
+        $("#localization").change(function () {
+            location.href = $(this).val();
+        });
+
+        $(".nav > li > a").click(function(){  
+            $("#menu").removeClass("in");
+            $("#menu").attr("height", "1px");
+        });
+
+        $(document).ready(function () {
+            $("#localization").val('@Resources.Global.Lang');
+        });
+    </script>
+</body>
+</html>

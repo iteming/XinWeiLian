@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Home_Detail" xml:space="preserve">
+    <value>打造全球领先的旅游互联网4.0区块链应用开放平台</value>
+  </data>
+  <data name="Home_Title" xml:space="preserve">
+    <value>智游链 - 旅游遇上智能合约</value>
+  </data>
+  <data name="Lang_Chinese" xml:space="preserve">
+    <value>中文</value>
+  </data>
+  <data name="Lang_English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Menu_Home" xml:space="preserve">
+    <value>首页</value>
+  </data>
+  <data name="Menu_Download" xml:space="preserve">
+    <value>下载</value>
+  </data>
+  <data name="Menu_Browser" xml:space="preserve">
+    <value>区块链浏览器</value>
+  </data>
+  <data name="Menu_Contact" xml:space="preserve">
+    <value>联系我们</value>
+  </data>
+  <data name="Web_Logo" xml:space="preserve">
+    <value>/Public/images/logo_china.png</value>
+  </data>
+  <data name="Menu_Notice" xml:space="preserve">
+    <value>公告</value>
+  </data>
+  <data name="Lang" xml:space="preserve">
+    <value>/zh</value>
+  </data>
+  <data name="Computer_img" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Content_detail1" xml:space="preserve">
+    <value>智游链发挥区块链的技术优势，依托景点等旅游资源，在游客、商家、运营商之间建立一个信任链，打造“区块链+旅游”商业应用开放平台，实现旅游资产的价值数字化，完善旅游商业服务生态链。
+通过链接企业、游客、用户、运营商为全球旅游企业和游客搭建去中心化的互联网应用。
+•旅游公司
+•景点
+•游客
+•应用平台</value>
+  </data>
+  <data name="Content_detail2" xml:space="preserve">
+    <value>类似游戏平台的开发，使场景实景化，旅游景点的体验不再受到时间和空间的限制。体验更加丰富，增加了ITR的流动性。景点和酒店的预订方式也将因此改变，游客与玩家相互沟通交流转化，增强客户粘性，提升景区效益。</value>
+  </data>
+  <data name="Content_img1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Content_img2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Content_img3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Globe_bg_img" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Globe_detail" xml:space="preserve">
+    <value>从此每个项目不在独立，游客与玩家紧密的联系在一起 旅游不在受到时间和空间的限制，体验不在受到时间和 空间的限制，体验更加的丰富和多样。</value>
+  </data>
+  <data name="Globe_title" xml:space="preserve">
+    <value>世界旅游的格局从此改变</value>
+  </data>
+  <data name="Home_bg_img" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Partner_1" xml:space="preserve">
+    <value>虚位以待</value>
+  </data>
+  <data name="Partner_2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Partner_3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Partner_4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Partner_5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Partner_6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Partner_title" xml:space="preserve">
+    <value>合作伙伴选择</value>
+  </data>
+  <data name="Project_sub_detail" xml:space="preserve">
+    <value>智游链是一个旅游协议，而且是一个去中心化的自动执行系统，通过自由链交易，让用户降低风险，降低交易成本。通过应用的接入提升旅游项目价值，丰富旅游项目的体验方式，增强客户粘性。随着流动性的不断增加，我们将构建一个未来基于旅游业的金融体系 ，和区块链应用平台。</value>
+  </data>
+  <data name="Project_sub_title" xml:space="preserve">
+    <value>用于旅游业的企业区块链解决方案</value>
+  </data>
+  <data name="Project_Title" xml:space="preserve">
+    <value>iTChain介绍</value>
+  </data>
+  <data name="Timeline_sub1" xml:space="preserve">
+    <value>点对点分布式信息传输、存储，为用户提供一个可以完全自由可依赖的数据发布，存储，传播平台。</value>
+  </data>
+  <data name="Timeline_sub2" xml:space="preserve">
+    <value>线上应用平台开发，线下实体对接。</value>
+  </data>
+  <data name="Timeline_sub3" xml:space="preserve">
+    <value>应用场景丰富，线上社区形成。</value>
+  </data>
+  <data name="Timeline_sub4" xml:space="preserve">
+    <value>伟大启航</value>
+  </data>
+  <data name="Timeline_title" xml:space="preserve">
+    <value>平台发展路线图</value>
+  </data>
+</root>
