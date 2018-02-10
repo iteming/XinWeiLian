@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Computer_img" xml:space="preserve">
-    <value />
+    <value>/Public/images/poject_1.png</value>
   </data>
   <data name="Content_detail1" xml:space="preserve">
     <value>智游链发挥区块链的技术优势，依托景点等旅游资源，在游客、商家、运营商之间建立一个信任链，打造“区块链+旅游”商业应用开放平台，实现旅游资产的价值数字化，完善旅游商业服务生态链。
@@ -228,6 +228,6 @@
     <value>平台发展路线图</value>
   </data>
   <data name="Web_Logo" xml:space="preserve">
-    <value>/Public/images/logo_china.png</value>
+    <value>/Public/images/logo.png</value>
   </data>
 </root>

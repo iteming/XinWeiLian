@@ -61,7 +61,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///  查找类似  的本地化字符串。
+        ///  查找类似 /Public/images/poject_1.png 的本地化字符串。
         /// </summary>
         internal static string Computer_img {
             get {
@@ -381,7 +381,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///  查找类似 /Public/images/logo_china.png 的本地化字符串。
+        ///  查找类似 /Public/images/logo.png 的本地化字符串。
         /// </summary>
         internal static string Web_Logo {
             get {

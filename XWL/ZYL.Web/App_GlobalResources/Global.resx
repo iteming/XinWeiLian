@@ -142,7 +142,7 @@
     <value>联系我们</value>
   </data>
   <data name="Web_Logo" xml:space="preserve">
-    <value>/Public/images/logo_china.png</value>
+    <value>/Public/images/logo.png</value>
   </data>
   <data name="Menu_Notice" xml:space="preserve">
     <value>公告</value>
@@ -151,7 +151,7 @@
     <value>/zh</value>
   </data>
   <data name="Computer_img" xml:space="preserve">
-    <value />
+    <value>/Public/images/poject_1.png</value>
   </data>
   <data name="Content_detail1" xml:space="preserve">
     <value>智游链发挥区块链的技术优势，依托景点等旅游资源，在游客、商家、运营商之间建立一个信任链，打造“区块链+旅游”商业应用开放平台，实现旅游资产的价值数字化，完善旅游商业服务生态链。
